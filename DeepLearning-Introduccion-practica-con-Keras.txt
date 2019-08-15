@@ -1,31 +1,4 @@
 
-
-
-
-
-
-
-
-Deep Learning
-Introduccion practica con Keras
-
-
-PRIMERA PARTE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Deep Learning
 Introduccion practica con Keras
 
@@ -34,13 +7,6 @@ PRIMERA PARTE
 
 
 Jordi Torres
-
-
-
-
-
-
-
 
 
 2018
@@ -57,7 +23,7 @@ Jordi Torres
 
 
 
-Este libro est† sujeto a una licencia Creative Commons BY NC SA: para cualquier explotacion de la obra autorizada por la licencia hara falta reconocer la autoria. No se permite un uso comercial de la obra original ni de las posibles obras derivadas, distribucion de las cuales se debe hacer con una licencia igual a la que regula la obra original.
+Este libro est¬† sujeto a una licencia Creative Commons BY NC SA: para cualquier explotacion de la obra autorizada por la licencia hara falta reconocer la autoria. No se permite un uso comercial de la obra original ni de las posibles obras derivadas, distribucion de las cuales se debe hacer con una licencia igual a la que regula la obra original.
 
 
 
@@ -83,7 +49,7 @@ Acerca de este libro	19
 A quien va dirigido el libro	19
 Organizacion del libro	20
 Requisitos para seguir el libro	23
- Por que Keras?	24
+ Por que Keras	24
 Introduccion: la supercomputacion, corazon de Deep Learning	27
 La primera GPU en la competicion Imagenet	29
 Crecimiento exponencial de la capacidad de computacion como motor del Deep Learning	31
@@ -187,7 +153,7 @@ Acerca del autor	207
 
 Prologo
 
-En 1953, Isaac Asimov publico Segunda Fundacion, el tercer libro de la saga de la Fundacion (o el decimotercero segun otras fuentes, este es un tema de debate). En Segunda Fundacion aparece por primera vez Arkady Darell, uno de los principales personajes de la parte final de la saga. En su primera escena, Arkady, que tiene 14 anos, esta haciendo sus tareas escolares. En concreto, una redaccion que lleva por titulo ?El Futuro del Plan Sheldon?. Para hacer la redaccion, Arkady esta utilizando un ?transcriptor?,un dispositivo que convierte su voz en palabras escritas. Este tipo de dispositivo, que para Isaac Asimov era ciencia ficcion en 1953, lo tenemos al alcance de la mano en la mayoria de nuestros smartphones, y el Deep Learning es uno de los responsables de que ya tengamos este tipo de aplicaciones, siendo la tecnologia otro de ellos.En la actualidad disponemos de GPUs (Graphics Processor Units), que solo cuestan alrededor de 100 euros, que estarian en la lista del Top500 hace unos pocos anos (compitiendo con maquinas que costaron millones de dolares). Las GPUs estaban pensadas para facilitar la programacion de videojuegos,  pero una combinacion de pequenos cambios (shaders unificados, memoria compartida, instrucciones de acceso a memoria, Tensor Cores? ≠quiza no sean tan pequenos!), y la aparicion de nuevas herramientas de programacion (CUDA, OpenCL, OpenACC), han facilitado el uso eficiente de GPUs en aplicaciones de proposito general, entre ellas Deep Learning. Ademas, teniendo en cuenta que cada ano se venden mas de 1?000 millones de smartphones (todos llevan una GPU), y que el negocio de los videojuegos es muy atractivo, tenemos garantizado que la mejora tecnologica de las GPUs va a continuar durante mucho tiempo.
+En 1953, Isaac Asimov publico Segunda Fundacion, el tercer libro de la saga de la Fundacion (o el decimotercero segun otras fuentes, este es un tema de debate). En Segunda Fundacion aparece por primera vez Arkady Darell, uno de los principales personajes de la parte final de la saga. En su primera escena, Arkady, que tiene 14 anos, esta haciendo sus tareas escolares. En concreto, una redaccion que lleva por titulo ?El Futuro del Plan Sheldon?. Para hacer la redaccion, Arkady esta utilizando un ?transcriptor?,un dispositivo que convierte su voz en palabras escritas. Este tipo de dispositivo, que para Isaac Asimov era ciencia ficcion en 1953, lo tenemos al alcance de la mano en la mayoria de nuestros smartphones, y el Deep Learning es uno de los responsables de que ya tengamos este tipo de aplicaciones, siendo la tecnologia otro de ellos.En la actualidad disponemos de GPUs (Graphics Processor Units), que solo cuestan alrededor de 100 euros, que estarian en la lista del Top500 hace unos pocos anos (compitiendo con maquinas que costaron millones de dolares). Las GPUs estaban pensadas para facilitar la programacion de videojuegos,  pero una combinacion de pequenos cambios (shaders unificados, memoria compartida, instrucciones de acceso a memoria, Tensor Cores? ¬≠quiza no sean tan pequenos!), y la aparicion de nuevas herramientas de programacion (CUDA, OpenCL, OpenACC), han facilitado el uso eficiente de GPUs en aplicaciones de proposito general, entre ellas Deep Learning. Ademas, teniendo en cuenta que cada ano se venden mas de 1?000 millones de smartphones (todos llevan una GPU), y que el negocio de los videojuegos es muy atractivo, tenemos garantizado que la mejora tecnologica de las GPUs va a continuar durante mucho tiempo.
 Conozco a Jordi desde hace mas de 30 anos; siempre ha estado muy preocupado por los ultimos avances tecnologicos, no solo en nuestra area de conocimiento (Arquitectura y Tecnologia de Computadores), sino en temas mas amplios que podriamos englobar en lo que se conoce en el mundo anglosajon como Computer Science. Jordi esta pensando en la investigacion, pero tambien en transferir esos conocimientos a nuestros estudiantes (este, y no otro, es el fin ultimo de la investigacion en la universidad). Teniendo en cuenta esto, no es de extranar que se haya embarcado en publicar una serie de libros dedicados a Deep Learning. Estas herramientas estan cambiando la forma de encarar los problemas de computacion y estan abriendo el espectro de que cosas puede hacer un computador.
  Y que nos depara el futuro? Para estar mejor informados, podemos empezar leyendo este libro, pero en los proximos anos vamos a tener una serie de aplicaciones revolucionarias muy relacionados con Deep Learning: coches autonomos, tratamiento de lenguaje natural, traduccion automatica?
 Quien lo va a tener dificil seran los escritores de ciencia ficcion, a quienes se les complica el imaginar nuevos dispositivos que no hayan sido ya disenados por ingenieros actuales.
@@ -201,7 +167,7 @@ Quien lo va a tener dificil seran los escritores de ciencia ficcion, a quienes s
 
 Agustin Fernandez
 Vicerrector de Transformacion Digital 
-de la Universitat Politäcnica de Catalunya (UPC)
+de la Universitat Polit≈†cnica de Catalunya (UPC)
 
 
 
@@ -224,12 +190,12 @@ Siempre me ha interesado la tecnologia de proxima generacion y su impacto, y por
 Sin duda, los avances tecnologicos en inteligencia artificial, junto con el resto de tecnologias mencionadas, ya estan aqui; eso nos permite construir una sociedad que mejora la vida de las personas, aunque tambien es cierto que la perspectiva del futuro cercano de estas tecnologias presenta alguna que otra incertidumbre.
 Sin embargo, estoy convencido de que podemos conseguir, a medida que nos vayamos encontrando con nuevos problemas debido a estas nuevas tecnologias, encontrar como sociedad sus soluciones. Para ello, es clave que todos y cada uno de los que ya trabajamos en el mundo tecnologico consigamos una mejor comprension de estos nuevos temas que estan revolucionando la informatica y podamos darle el uso correcto, ademas de saber explicarlos.
 Esta obra es la primera parte del libro Deep Learning - Introduccion practica con Keras que estoy escribiendo durante el tiempo libre que me deja mi actividad academica y de investigacion. Mi ilusion era poder terminar la obra entera antes de verano, pero debo ser realista y aceptar que no podra ser asi, y sin duda necesitare muchisimas mas horas (meses :) ) para poder terminarla.
-Pero como ya esta finalizada la primera mitad del libro, siendo esta la parte mas basica del tema (la que yo llamo Hello world!) y la estoy usando para dar soporte a mis clases en la Facultat d?InformÖtica de Barcelona de la Universitat Politäcnica de Catalunya ? Barcelona Tech (UPC), he decidido avanzar su publicacion de forma abierta en mi pagina web personal www.JordiTorres.Barcelona/DeepLearning para ofrecer a la comunidad interesada un primer contacto con esta tecnologia y permitirle iniciarse por su cuenta en la programacion de Deep Learning sin tener que esperar a tener la obra completa. Si el lector prefiere acceder a este contenido en formato ebook o papel, puede obtenerlo en sus portales de compra. 
+Pero como ya esta finalizada la primera mitad del libro, siendo esta la parte mas basica del tema (la que yo llamo Hello world!) y la estoy usando para dar soporte a mis clases en la Facultat d?Inform‚Ä¶tica de Barcelona de la Universitat Polit≈†cnica de Catalunya ? Barcelona Tech (UPC), he decidido avanzar su publicacion de forma abierta en mi pagina web personal www.JordiTorres.Barcelona/DeepLearning para ofrecer a la comunidad interesada un primer contacto con esta tecnologia y permitirle iniciarse por su cuenta en la programacion de Deep Learning sin tener que esperar a tener la obra completa. Si el lector prefiere acceder a este contenido en formato ebook o papel, puede obtenerlo en sus portales de compra. 
 Como reza el titulo, este libro que estoy preparando solo pretende ser una introduccion practica a Deep Learning, una de las areas mas activas actualmente en el ambito de la inteligencia artificial, no un tratado exhaustivo sobre el tema, pues esta dirigido a un lector que dispone de conocimientos en programacion pero que aun no ha tenido la oportunidad de iniciarse a estos nuevos conceptos claves en la informatica, y quiere descubrir algunos de los aspectos mas de vanguardia de esta tecnologia.  
 Ya les avanzo que el libro sera una invitacion a usar el teclado de su ordenador mientras va aprendiendo: nosotros lo llamamos learn by doing, y mi experiencia como profesor en la UPC me indica que es una aproximacion que funciona muy bien entre ingenieros e ingenieras que tratan de iniciarse en un nuevo tema.
 Por esta razon, el libro tendra un caracter eminentemente practico, y por ello se reducira todo lo posible la parte teorico-matematica, aunque es estrictamente necesario recurrir a ciertos detalles teoricos para ofrecer un conocimiento solido al lector. Esto conlleva que en sus paginas se iran intercalando conocimientos teoricos y practicos, complementarios en el proceso de aprendizaje. 
 Espero con ello aportar mi granito de arena en este mundo de la formacion que tanto me apasiona; deseo tambien que sirva de guia a cualquier navegante interesado en empezar su aventura en este campo tan interesante. 
-Dejenme decirles: ≠gracias por estar leyendo este libro! El simple hecho me reconforta y justifica mi esfuerzo en escribirlo. Aquellos que me conocen saben que la docencia (y la formacion en general) es una de mis pasiones, y me mantiene con vigor y energia. Como me recuerda a veces mi querida madre, cuando era pequeno decia que de mayor queria ensenar, ser maestro. Pues aqui me tienen, ≠Sueno cumplido!
+Dejenme decirles: ¬≠gracias por estar leyendo este libro! El simple hecho me reconforta y justifica mi esfuerzo en escribirlo. Aquellos que me conocen saben que la docencia (y la formacion en general) es una de mis pasiones, y me mantiene con vigor y energia. Como me recuerda a veces mi querida madre, cuando era pequeno decia que de mayor queria ensenar, ser maestro. Pues aqui me tienen, ¬≠Sueno cumplido!
 
 
 
@@ -285,23 +251,23 @@ El primer capitulo contiene una motivacion al tema y las instrucciones para prep
 En el segundo capitulo, a partir de un caso de estudio, se explican los conceptos basicos de una red neuronal. Luego introducimos las redes neuronales densamente conectadas y mostramos su implementacion con Keras.
 En el tercer capitulo presentamos como se realiza el proceso de aprendizaje de una red neuronal, adentrandonos en algunos de sus componentes mas importantes. La segunda parte del capitulo invita al lector a que practique los conocimientos adquiridos con TensorFlow playground.
 En el capitulo cuarto, ya preparado el lector con una base importante de como son las redes neuronales, presentamos e implementamos las redes neuronales convolucionales, una de las familias de redes neuronales mas populares en estos momentos. 
-La segunda parte del libro abarca una introduccion a todos los conceptos que actualmente se tratan en Deep Learning para que el lector al acabar el libro completo tenga una vision general del tema y pueda empezar por su cuenta a profundizar en aquellos aspectos que crea que le aportan mas valor. Espero que esta parte de la obra pueda ver la luz en pocos meses. Por favor, ≠crucen los dedos conmigo!.
+La segunda parte del libro abarca una introduccion a todos los conceptos que actualmente se tratan en Deep Learning para que el lector al acabar el libro completo tenga una vision general del tema y pueda empezar por su cuenta a profundizar en aquellos aspectos que crea que le aportan mas valor. Espero que esta parte de la obra pueda ver la luz en pocos meses. Por favor, ¬≠crucen los dedos conmigo!.
 En estos momentos, el borrador del quinto capitulo describe como se pueden obtener los datos y como se preprocesan, con especial atencion en el caso de ser texto cuando se quiere entrenar una red neuronal. A continuacion analizamos desde un punto de vista absolutamente practico como puede ser la prevencion del sobreajuste (overfitting) de los modelos a los datos.
 El capitulo sexto lo centraremos en uno de los problemas mas habituales en Deep Learning en el mundo real, como es el no tener suficientes datos para entrenar nuestras redes. Se explicaran varias tecnicas frecuentemente utilizadas en estos momentos en proyectos reales (transfer learning, data augmentation, etc.).
 En el septimo capitulo se introducen las redes neuronales recurrentes, que a pesar de tener requerimientos de computacion importantes se estan popularizando mucho en la industria.
 Y, finalmente, en el capitulo octavo vamos a presentar la API funcional de Keras que permite implementar arquitecturas mas complejas, e introducimos algunas de las que actualmente gozan de gran populariodad, como las GAN entre otras.
 El libro acaba con una clausura donde me permitire hacer unas reflexiones sobre el tema y su impacto. En esta edicion de la primera parte del libro he incluido una version preliminar de esta clausura.
-Este libro va acompanado de un repositorio de codigo en el GitHub donde el lector puede encontrar los ejemplos presentados en el mismo. Muchos de los ejemplos usados estan inspirados en los  que Franáois Chollet ha compartido en el GitHub de su ultimo libro, Deep Learning with Python1. ≠Gracias, Franáois!
+Este libro va acompanado de un repositorio de codigo en el GitHub donde el lector puede encontrar los ejemplos presentados en el mismo. Muchos de los ejemplos usados estan inspirados en los  que Fran‚Ä°ois Chollet ha compartido en el GitHub de su ultimo libro, Deep Learning with Python1. ¬≠Gracias, Fran‚Ä°ois!
 
 Requisitos para seguir el libro
 Como hemos mencionado con frecuencia, esta obra pretende ser una introduccion; por ello, no es necesario que el lector sea un experto en Python, solo ha de tener, evidentemente, conocimientos de programacion e interes en aprender por su cuenta detalles del lenguaje cuando no los entienda. 
 Tampoco se necesita ser un experto en Machine Learning, pero esta claro que puede ser muy util conocer unos primeros conceptos sobre el tema. Solo se suponen los conocimientos basicos en matematicas de cualquier estudiante (de bachillerato de la rama cientifico-tecnica). A partir de ellos, a lo largo de los capitulos se repasan muy brevemente los conceptos mas importantes de Machine Learning que se puedan requerir. 
 Asumimos que el lector, antes de empezar a leer, tiene instalado Python y el paquete de Keras en su ordenador, portatil o su instancia de maquina virtual en  Cloud. Es importante remarcar que todos los codigos que se proponen al lector en esta primera parte del libro para que los pruebe en su ordenador pueden ser ejecutados en una plataforma que solo tenga CPU; no es un requisito tener una GPU2. Pero si que es cierto que en la version final del libro se propondran codigos que requieren entrenamientos de redes que en plataformas con solo CPU pueden tardar horas. En este caso, y si el lector le apetece, les propondremos que cancelen el proceso de calculo de aprendizaje de los parametros y sigan las instrucciones para descargar los resultados (de una version ya entrenada) de una ejecucion que hemos realizado nosotros con la ayuda  de una GPU y que contendra los mismos valores que el lector llegaria a conseguir en su ordenador.
-≠Pero lo mas importante, en cuanto a prerrequisitos, es tener interes por aprender!
+¬≠Pero lo mas importante, en cuanto a prerrequisitos, es tener interes por aprender!
 
  Por que Keras?
 Keras3 es la libreria recomendada para beginners, puesto que su curva de aprendizaje es muy suave en comparacion con otras, a la vez que es, sin duda, una de las herramientas para implementar redes neuronales de mayor popularidad en el momento despues de TensorFlow.
-Keras es una libreria de Python que proporciona, de una manera sencilla, la creacion de una gran gama de modelos deˇDeep Learning usando como backend otras librerias como TensorFlow, Theano o CNTK. Fue desarrollado y es mantenido porˇFranáois Chollet4, ingeniero de Google, y su codigo ha sido liberado bajo la licencia permisiva del MIT.
+Keras es una libreria de Python que proporciona, de una manera sencilla, la creacion de una gran gama de modelos de√øDeep Learning usando como backend otras librerias como TensorFlow, Theano o CNTK. Fue desarrollado y es mantenido por√øFran‚Ä°ois Chollet4, ingeniero de Google, y su codigo ha sido liberado bajo la licencia permisiva del MIT.
 Personalmente, valoro la austeridad y simplicidad que presenta este modelo de programacion, sin adornos y maximizando la legibilidad; permite expresar redes neuronales de una manera muy modular, considerando un modelo como una secuencia (o un grafo si se trata de modelos mas avanzados que trataremos en el capitulo 8). Por ultimo, pero no menos importante, creo que es un gran acierto haberse decantado por usar el lenguaje de programacion Python; por todo ello, he considerado usar Keras en este libro.
 Keras en estos momentos se encuentra incluido en Tensorflow, pero ademas se puede usar como una libreria de Python. Para iniciarse en el tema considero que esta segunda opcion es la mas adecuada y para ello mi propuesta sera usar Jupyter5, puesto que es un entorno de desarrollo muy extendido y muy facil de usar. Mas adelante presentaremos como poder poner a punto nuestro entorno de trabajo.
 
@@ -315,7 +281,7 @@ Keras en estos momentos se encuentra incluido en Tensorflow, pero ademas se pued
 Introduccion: la supercomputacion, corazon de Deep Learning
 
 Seguramente, a estas alturas algunos lectores ya se han planteado la pregunta:  por que un investigador en supercomputacion se ha puesto a investigar Deep Learning? 
-En realidad, hace anos que empece a interesarme por como la supercomputacion podia contribuir a mejorar los metodos de Machine Learning; entonces, en 2006, empece a codirigir tesis doctorales con un gran amigo y catedratico del departamento de Computer Science de la UPC, Ricard GavaldÖ6 , experto en Machine Learning y Data Mining.
+En realidad, hace anos que empece a interesarme por como la supercomputacion podia contribuir a mejorar los metodos de Machine Learning; entonces, en 2006, empece a codirigir tesis doctorales con un gran amigo y catedratico del departamento de Computer Science de la UPC, Ricard Gavald‚Ä¶6 , experto en Machine Learning y Data Mining.
 Pero no fue hasta el septiembre del 2013, momento en el que ya disponia de una base relativamente solida de conocimiento sobre Machine Learning,  que empece a centrar mi interes en Deep Learning, cuando, gracias al investigador de nuestro departamento Computer Architecture de la UPC Jordi Nin7, cayo en mis manos el articulo Building High-level Features Using Large Scale Unsupervised Learning8, escrito por investigadores de Google. En este articulo presentado en el congreso International Conference in Machine Learning del ano anterior, los autores explicaban como entrenaron un modelo Deep Learning en un cluster de 1?000 maquinas con 16?000 cores. Me alegre muchisimo de ver como   la supercomputacion permitia acelerar este tipo de aplicaciones, como escribi en mi blog9 unos meses mas tarde, justificando las razones que llevaron al grupo a anadir este foco en su roadmap de investigacion.
 Gracias a la ley de Moore10, en el ano 2012, cuando estos investigadores de Google escribieron este articulo,  disponiamos de supercomputadores que permitian resolver problemas que hubieran sido intratables unos pocos anos antes debido a la capacidad de computacion. Por ejemplo, el computador al que yo tenia acceso en el ano 1982, donde ejecute mi primer programa con tarjetas perforadas, era un Fujitsu que permitia ejecutar algo mas de un millon de operaciones por segundo. 30 anos despues, en el 2012, el supercomputador Marenostrum que teniamos por aquel entonces en el Barcelona Supercomputer Center?Centro Nacional de Supercomputacion11  (BSC), era solo 1?000?000?000  veces mas rapido que el ordenador en el que yo empece. 
 Con la actualizacion de aquel ano, el supercomputador MareNostrum presentaba un rendimiento maximo teorico de 1,1 Petaflops (1?100?000?000?000?000 operaciones de coma flotante por segundo12). Lo conseguia con          3?056 servidores con un total de 48?896 cores  y 115?000 Gibabytes de memoria principal total albergados en 36 racks. Por aquel entonces el supercomputador Marenostrum estaba considerado como uno de los mas rapidos del mundo,  concretamente en la posicion trigesimosexta, en  la lista TOP50013, que se actualiza cada medio ano y ordena los 500 supercomputadores mas potentes del mundo.  Adjunta pueden ver una fotografia donde se observan los racks de computacion del Marenostrum que se albergaban en la capilla de Torres Girona del campus nord de la UPC en Barcelona14.
@@ -403,7 +369,7 @@ Quiero creerme que Pichai es muy optimista respecto a la inteligencia artificial
 1.2 Inteligencia artificial, Machine Learning y Deep Learning
 Creo que antes de continuar estaria bien que concretaramos un poco que entendemos por inteligencia artificial, Machine Learning y Deep Learning, tres terminos que apareceran muy a menudo a lo largo del libro.  
 Inteligencia artificial
- A que nos referimos cuando hablamos de inteligencia artificial? Una extensa y precisa definicion (y descripcion de sus ambitos) se encuentra en el libro de Stuart Rusell39 y Peter Norvig40ˇtituladoˇArtificial Intelligence, a modern approach41,ˇel texto sobre inteligencia artificial mas popular en el mundo universitario y, sin duda para mi, el mejor punto de partida para tener una vision global del tema. Pero intentando hacer una aproximacion mas generalista (proposito de este libro), podriamos aceptar una definicion simple en la que por inteligencia artificial nos referimos a aquella inteligencia que muestran las maquinas, en contraste con la inteligencia natural de los humanos. En este sentido, una posible definicion concisa y general de inteligencia artificial podria ser el esfuerzo para automatizar tareas intelectuales normalmente realizadas por humanos.
+ A que nos referimos cuando hablamos de inteligencia artificial? Una extensa y precisa definicion (y descripcion de sus ambitos) se encuentra en el libro de Stuart Rusell39 y Peter Norvig40√øtitulado√øArtificial Intelligence, a modern approach41,√øel texto sobre inteligencia artificial mas popular en el mundo universitario y, sin duda para mi, el mejor punto de partida para tener una vision global del tema. Pero intentando hacer una aproximacion mas generalista (proposito de este libro), podriamos aceptar una definicion simple en la que por inteligencia artificial nos referimos a aquella inteligencia que muestran las maquinas, en contraste con la inteligencia natural de los humanos. En este sentido, una posible definicion concisa y general de inteligencia artificial podria ser el esfuerzo para automatizar tareas intelectuales normalmente realizadas por humanos.
 Como tal, el area de inteligencia artificial (Artificial Intelligence en ingles) es un campo muy amplio que abarca muchas areas del conocimiento relacionadas con el aprendizaje automatico; incluso se incluyen muchos mas enfoques no siempre catalogados como aprendizaje automatico por mis colegas universitarios expertos en el tema. Ademas, a lo largo del tiempo, a medida que los computadores han sido cada vez mas capaces de ?hacer cosas?, se han ido cambiando las tareas o tecnologias consideradas como ?inteligentes?.
 Esto explica el porque desde los anos 50, la inteligencia artificial ha experimentado varias oleadas de optimismo, seguidas por la decepcion y la perdida de financiacion e interes (epocas conocidas como AI winter42), seguidas de nuevos enfoques, exito y financiacion. Ademas, durante la mayor parte de su historia, la investigacion en inteligencia artificial se ha dividido en subcampos basados en consideraciones tecnicas o herramientas matematicas concretas y con comunidades de investigacion que no se comunicaban suficientemente entre si.
 
@@ -461,7 +427,7 @@ La siguiente figura resume visualmente la idea intuitiva de que  Deep Learning e
 
 
 1.3  Por que ahora?
-En tan solo diez anos44, cuatro de las cinco empresas mas grandes del mundo por capitalizacion de mercado han cambiado: Exxon Mobil, General Electric, Citigroup y Shell Oil estan fuera y Apple, Alphabet (la compania matriz de Google), Amazon y Facebook han tomado su lugar. Solo Microsoft mantiene su posicion. Ya se han percatado que todas ellas dominan la nueva era digital en que nos encontramos inmersos. Estamos hablando de empresas que basan su poderio en inteligencia artificial en general, y en particular Deep Learning.ˇ
+En tan solo diez anos44, cuatro de las cinco empresas mas grandes del mundo por capitalizacion de mercado han cambiado: Exxon Mobil, General Electric, Citigroup y Shell Oil estan fuera y Apple, Alphabet (la compania matriz de Google), Amazon y Facebook han tomado su lugar. Solo Microsoft mantiene su posicion. Ya se han percatado que todas ellas dominan la nueva era digital en que nos encontramos inmersos. Estamos hablando de empresas que basan su poderio en inteligencia artificial en general, y en particular Deep Learning.√ø
 John McCarthy acuno el termino inteligencia artificial en la decada de los 50 y fue uno de los padres fundadores de la inteligencia artificial junto con Marvin Minsky. Tambien en 1958 Frank Rosenblatt construyo un prototipo de red neuronal, que llamo el Perceptron. Ademas, las ideas clave de las redes neuronales Deep Learning para la vision por computador ya se conocian en 1989; tambien los algoritmos fundamentales de Deep Learning para series temporales como LSTM (que trataremos mas adelante), ya fueron desarrollados en 1997, por poner algunos ejemplos. Entonces,  por que este boom de la inteligencia artificial?
 Sin duda, la computacion disponible ha sido el principal desencadenante, como ya hemos presentado anteriormente. Sin embargo, otros factores han contribuido a desencadenar el potencial de la inteligencia artificial y las tecnologias relacionadas. A continuacion vamos a hablar de algunos de ellos.
 
@@ -474,9 +440,9 @@ Pero ImageNet solo es una de las bases de datos disponibles que se han usado par
 
 Democratizacion de la computacion
 Ahora bien,  que pasa si uno no dispone de esta capacidad de computacion en su empresa? La inteligencia artificial hasta ahora ha sido principalmente el juguete de las grandes companias de tecnologia como Amazon, Baidu, Google o Microsoft, asi como algunas nuevas empresas que disponian de estas capacidades. Para muchos otros negocios y partes de la economia, los sistemas de inteligencia artificial hasta ahora han sido demasiado costosos y demasiado dificiles de implementar por completo.  Estamos hablando de Cloud Computing53.
-Pero ahora estamos entrando en otra era de democratizacion de la computacion, y las empresas pueden disponer de acceso a grandes centros de procesado de datos de mas de 28?000 metros cuadrados (cuatro veces el campo del Baráa), con cientos de miles de servidores dentro. 
+Pero ahora estamos entrando en otra era de democratizacion de la computacion, y las empresas pueden disponer de acceso a grandes centros de procesado de datos de mas de 28?000 metros cuadrados (cuatro veces el campo del Bar‚Ä°a), con cientos de miles de servidores dentro. 
 Cloud Computing ha revolucionado la industria mediante la democratizacion de la computacion y ha cambiado completamente la manera de operar de los negocios. Y ahora es el turno de cambiar el escenario de la inteligencia artificial y  Deep Learning, ofreciendo una gran oportunidad para las pequenas y medianas empresas que no pueden construir este tipo de infraestructuras, pero en cambio Cloud Computing si se lo puede ofrecer; de hecho, ofrece acceso a una capacidad de computacion que antes solo estaba disponible para grandes organizaciones o gobiernos.
-Ademas, los proveedores de Cloud estan ahora ofreciendo lo que se conoce comoˇArtificial Intelligence algorithms as a Service (AI-as-a-Service), servicios de inteligencia artificial a traves de Cloud que pueden entrelazarse y trabajar conjuntamente con aplicaciones internas de las empresas a traves de simples API REST54.
+Ademas, los proveedores de Cloud estan ahora ofreciendo lo que se conoce como√øArtificial Intelligence algorithms as a Service (AI-as-a-Service), servicios de inteligencia artificial a traves de Cloud que pueden entrelazarse y trabajar conjuntamente con aplicaciones internas de las empresas a traves de simples API REST54.
 Esto implica que esta al alcance de casi todos, ya que se trata de un servicio que solo se paga por el tiempo utilizado. Esto es disruptivo, porque ahora mismo permite a los desarrolladores de software usar y poner practicamente cualquier algoritmo de inteligencia artificial en produccion en un santiamen.
 Amazon, Microsoft, Google e IBM estan liderando esta oleada de servicios AIaaS que permiten desde entrenamientos a puestas en produccion de manera rapida. En el momento de escribir este libro, Amazon AIaaS estaba disponible a dos niveles: analiticas predictivas con Amazon Machine Learning55 y la herramienta SageMaker56  para la construccion y despliegue rapido de modelos. Microsoft ofrece sus servicios a traves de su Azure Machine Learning que puede ser dividido en dos categorias principales tambien: Azure Machine Learning Studio57 y Azure Intelligence Gallery58. Google ofrece Prediction API59  y el Google ML Engine60. IBM ofrece servicios AIaaS a traves de su Watson Analytics61. Y  no olvidemos soluciones que ya vienen de startups, como PredicSis62 and BigML63.
 Sin duda, la inteligencia artificial liderara la proxima revolucion. Su exito dependera en gran medida de la creatividad de las empresas y no tanto de la tecnologia hardware en parte gracias a Cloud Computing. 
@@ -486,7 +452,7 @@ Hace algunos anos,  Deep Learning requeria experiencia en lenguajes como C++ y C
 Puestos a destacar algunos, les propongo que se queden con TensorFlow, Keras y PyTorch, pues son los mas dinamicos en estos momentos si nos basamos en los contributors y commits o starts de estos proyectos en GitHub64. 
 En concreto, recientemente ha tomado mucho impulso TensorFlow65 y sin duda es el dominante. Fue originalmente desarrollado por investigadores e ingenieros del grupo de Google Brain en Google. El sistema fue disenado para facilitar la investigacion en Machine Learning y hacer mas rapido la transicion de un prototipo de investigacion a un sistema de produccion. Si miramos en su pagina de Gihub66 veremos que tenemos, a fecha de escribir este libro, mas de 30?000 commits, mas de 1?400 contributors y casi 100?000 starts. Nada desdenable. 
 Le sigue Keras67 con una API de alto nivel para redes neuronales, que lo convierte en el entorno perfecto para iniciarse en el tema. El codigo se especifica en Python, y en estos momentos es capaz de ejecutarse encima de tres entornos destacados: TensorFlow, CNTK o Theano. En principio, el usuario puede cambiar el motor de ejecucion sin cambiar su codigo de Keras. Ahora mismo, Keras cuenta con mas de 4?500 commits, mas de 650 contributors y mas de 27?000 starts.
-PyTorch y Torch68 son dos entornos de Machine Learning implementados en C, usando OpenMP69 y CUDAˇpara sacar provecho de infraestructuras altamente paralelas. PyTorch es la version mas focalizada para Deep Learning y basada en Python, desarrollado por Facebook. Es un entorno  popular en mi campo de investigacion puesto que permite mucha flexibilidad en la construccion de las redes neuronales y tiene tensores dinamicos, entre otras cosas. En el momento de escribir este libro, Pytorch cuenta con mas de 10?500 commits, alrededor de 600 contributors y mas de 13?000 starts.
+PyTorch y Torch68 son dos entornos de Machine Learning implementados en C, usando OpenMP69 y CUDA√øpara sacar provecho de infraestructuras altamente paralelas. PyTorch es la version mas focalizada para Deep Learning y basada en Python, desarrollado por Facebook. Es un entorno  popular en mi campo de investigacion puesto que permite mucha flexibilidad en la construccion de las redes neuronales y tiene tensores dinamicos, entre otras cosas. En el momento de escribir este libro, Pytorch cuenta con mas de 10?500 commits, alrededor de 600 contributors y mas de 13?000 starts.
 Finalmente, y aunque no es entorno exclusivo de Deep Learning, es importante mencionar Scikit-learn70 que se usa muy a menudo en la comunidad de Deep Learning para el preprocesado de los datos71. Scikit-learn cuenta con mas de 22?500 commits, mas de 1?000 contributors y mas de  27?000 starts. 
 Pero como ya he avanzado, hay muchisimos otros frameworks orientados a Deep Learning. Los que destacariamos son Theano72 (Montreal Institute of Learning Algortithms), Caffe73 (Universidad de Berkeley), Caffe274 (Facebook Research), CNTK75 (Microsoft), MXNET76 (soportado por Amazon entre otros), Deeplearning4j77, Chainer78 , DIGITS79 (Nvidia), Kaldi80, Lasagne81, Leaf82, MatConvNet83, OpenDeep84, Minerva85 y SoooA86 , entre muchos otros.
 
@@ -622,7 +588,7 @@ Para mostrar como es una neuronal basica, supongamos un ejemplo simple, donde te
 
 Dado un nuevo punto ?X?, queremos saber que etiqueta le corresponde:
 
-Una aproximacion habitual es dibujar una lineaˇque separe los dos grupos y usarla como clasificador:
+Una aproximacion habitual es dibujar una linea√øque separe los dos grupos y usarla como clasificador:
 
 En este caso, los datos de entrada seran representados por vectores de la forma (x1, x2) que indican sus coordenadas en este espacio de dos dimensiones, y nuestra funcion retornara ?0? o ?1? (encima o debajo de la linea) para saber si se debe clasificar como ?cuadrado? o ?circulo?. Como hemos visto, se trata de un caso de regresion lineal, donde ?la linea? (el clasificador) puede ser definida por la recta: 
 
@@ -658,7 +624,7 @@ Los MLP son a menudo usados para clasificacion, y en concreto cuando las clases 
 
 2.3 Funcion de activacion softmax
 Vamos a resolver el problema de manera que, dada una imagen de entrada, obtendremos las probabilidades de que sea cada uno de los 10 posibles digitos. De esta manera tendremos un modelo que, por ejemplo, podria predecir en una imagen un nueve, pero solo estar seguro en un 80% de que sea un nueve,  ya que debido al dudoso bucle inferior piensa que podria llegar a ser un ocho en un 5% de posibilidades e incluso podria dar una cierta probabilidad a cualquier otro numero. Aunque en este caso concreto consideraremos que la prediccion de nuestro modelo es un 9, pues es el que tiene mayor probabilidad, esta aproximacion de usar una distribucion de probabilidades nos puede dar una mejor idea de cuan confiados estamos de nuestra prediccion. Esto es bueno en este caso, donde los numeros son hechos a mano, y seguramente en muchos otros no podemos reconocer los digitos con un 100% de seguridad.
-Por tanto, para este ejemplo de clasificacion de MNIST, para cada ejemplo de entrada obtendremos como vector de salida de la red neuronal una distribucion de probabilidad sobre un conjunto deˇetiquetas mutuamente excluyentes, es decir, un vector de 10 probabilidades cada una correspondiente a un digito y que todas estas 10 probabilidades sumen 1 (las probabilidades se expresaran entre 0 y 1).
+Por tanto, para este ejemplo de clasificacion de MNIST, para cada ejemplo de entrada obtendremos como vector de salida de la red neuronal una distribucion de probabilidad sobre un conjunto de√øetiquetas mutuamente excluyentes, es decir, un vector de 10 probabilidades cada una correspondiente a un digito y que todas estas 10 probabilidades sumen 1 (las probabilidades se expresaran entre 0 y 1).
 Como ya hemos avanzado, esto se logra mediante el uso de una capa de salida en nuestra red neuronal con la funcion de activacion softmax, en la que cada neurona en esta capa softmax depende de las salidas de todas las otras neuronas de la capa, puesto que la suma de la salida de todas ellas debe ser 1. 
 Pero  como funciona la funcion de activacion softmax? La funcion softmax se basa en calcular ?las evidencias? de que una determinada imagen pertenece a una clase en particular y luego se convierten estas evidencias en probabilidades de que pertenezca a cada una de las posibles clases.
 Para medir la evidencia de que una determinada imagen pertenece a una clase en particular, una aproximacion consiste en realizar una suma ponderada de la evidencia de pertenencia de cada uno de sus pixeles a esa clase. Para explicar la idea usare un ejemplo visual. 
@@ -825,7 +791,7 @@ En este apartado vamos a presentar como se especifica en Keras el modelo que hem
 
 Clase Sequential en Keras
 La estructura de datos principal en Keras es la clase Sequential, que permite la creacion de una red neuronal basica. Keras ofrece tambien una API107 que permite implementar modelos mas complejos en forma de grafo que pueden tener multiples entradas, multiples salidas, con conexiones arbitrarias en medio, pero no lo presentaremos hasta el capitulo octavo del libro.
-La claseˇSequential108  de la libreria de Keras es una envoltura para el modelo de red neuronal secuencial que ofrece Keras y se puede crear  de la siguiente manera:
+La clase√øSequential108  de la libreria de Keras es una envoltura para el modelo de red neuronal secuencial que ofrece Keras y se puede crear  de la siguiente manera:
 
   
   from keras.models import Sequential
@@ -880,7 +846,7 @@ A continuacion vamos a presentar una breve descripcion de los pasos que debemos 
 
 Configuracion del proceso de aprendizaje
 A partir del modelo Sequential, podemos  definir las capas de manera sencilla con el metodo add(), tal como hemos avanzado en el apartado anterior. Una vez que tengamos nuestro modelo definido, podemos configurar como sera su proceso de aprendizaje con el metodo compile( ), con el que podemos especificar algunas propiedades a traves de argumentos del metodo.
-El primero de estos argumentos es la funcion de loss que usaremos para evaluar el grado de error entre salidas calculadas y las salidas deseadas de los datos de entrenamiento.  Por otro lado, se especifica un optimizador que, como veremos, es la manera que tenemos de especificar el algoritmo de optimitzaacion que permite a la red neuronal calcular los pesos de los parametros a partir de los datos de entrada y de la funcion de loss definida. Mas detalle del  proposito exacto de la funcion deˇloss y el optimizador se presentaran en el siguiente capitulo.
+El primero de estos argumentos es la funcion de loss que usaremos para evaluar el grado de error entre salidas calculadas y las salidas deseadas de los datos de entrenamiento.  Por otro lado, se especifica un optimizador que, como veremos, es la manera que tenemos de especificar el algoritmo de optimitzaacion que permite a la red neuronal calcular los pesos de los parametros a partir de los datos de entrada y de la funcion de loss definida. Mas detalle del  proposito exacto de la funcion de√øloss y el optimizador se presentaran en el siguiente capitulo.
 Y finalmente debemos indicar la metrica que usaremos para monitorizar el proceso de aprendizaje (y prueba) de nuestra red neuronal. En este primer ejemplo solo tendremos en cuenta la accuracy (fraccion de imagenes que son correctamente clasificadas). Por ejemplo, en nuestro caso podemos especificar los siguientes argumentos en metodo compile( ) para probarlo en nuestro ordenador:
 
 
@@ -1109,7 +1075,7 @@ SGD es muy facil de implementar en Keras.  En el metodo compile() se indica que 
 Aqui, estamos dividiendo nuestros datos en batches de 100 con el argumento de batch_size.  Con el numero de epochs estamos indicando cuantas veces realizamos este proceso sobre todos los datos. Mas adelante en este capitulo, cuando ya hayamos presentado los parametros habituales de los optimizadores, volveremos a hablar de estos dos argumentos.
 
 3.4 Parametrizacion de los modelos
-Si el lector al acabar el anterior capitulo ha creado un modelo con los hiperparametros que alli usamos, supongo que la accuracy del modelo (es decir, el numero de veces que acertamos respecto el total) le habra salido sobre el 90%.  Son buenos estos resultados? Yo creo que son fantasticos, porque significa que el lector ya ha programado y ejecutado suˇprimera red neuronal con Keras. Congratulations!
+Si el lector al acabar el anterior capitulo ha creado un modelo con los hiperparametros que alli usamos, supongo que la accuracy del modelo (es decir, el numero de veces que acertamos respecto el total) le habra salido sobre el 90%.  Son buenos estos resultados? Yo creo que son fantasticos, porque significa que el lector ya ha programado y ejecutado su√øprimera red neuronal con Keras. Congratulations!
 Otra cosa es que haya modelos que permiten mejorar la accuracy. Y esto depende de tener mucho conocimiento y practica para manejarse bien con los muchos hiperparametros que podemos cambiar: por ejemplo, con un simple cambio de la funcion de activacion de la primera capa, pasando de una sigmoid a una relu:
 
   
@@ -1191,7 +1157,7 @@ TensorFlow Playground es una aplicacion web de visualizacion interactiva escrita
 
 
 
-Con esta herramienta podremos experimentar con diferentes hiperparametros y ver su comportamiento.  Precisamente, la flexibilidad de las redes neuronales es una de sus virtudes y a la vez uno de sus inconvenientes para los que se inician en el tema: ≠hay muchos  hiperparametros para ajustar!
+Con esta herramienta podremos experimentar con diferentes hiperparametros y ver su comportamiento.  Precisamente, la flexibilidad de las redes neuronales es una de sus virtudes y a la vez uno de sus inconvenientes para los que se inician en el tema: ¬≠hay muchos  hiperparametros para ajustar!
 Para empezar, elegimos el conjunto de datos indicado en el apartado ?DATA? que se muestra en la figura anterior, y a continuacion pulsamos el boton de ?Play?. Ahora podemos ver como TensorFlow Playgrond resuelve este problema particular. La linea entre la zona de color azul y naranja empieza a moverse lentamente.  Puede pulsar el boton de ?Reset? y volver a probarlo varias veces para ver como la linea se mueve con diferentes valores iniciales a medida que vemos como el contador epoch va aumentando.  
 Para empezar a entender como funciona la herramienta podemos usar el primer ejemplo de perceptron presentado en este libro en el capitulo anterior, un simple problema de clasificacion. 
 En este caso la aplicacion trata de encontrar los mejores valores de los parametros que permitan clasificar correctamente estos puntos. Si pone el cursor encima de los arcos, el lector vera que aparece el valor que se ha asignado a cada parametro (e incluso permite editarlo, y probarlo para ver su efecto):
@@ -1212,7 +1178,7 @@ A continuacion, en la siguiente columna podemos realizar la seleccion de caracte
 La topologia de la red se puede definir en la siguiente columna. Podemos tener hasta seis capas ocultas (agregando capas ocultas, haciendo clic en el signo ?+?). Y podemos tener hasta ocho neuronas por capa oculta (haciendo clic en el signo ?+? de la capa correspondiente):
 
 
-ˇ
+√ø
 
 Finalmente, recordar que al entrenar la red neuronal queremos minimizar la ?Training loss? y luego ver que con los datos de test tambien se minimiza la ?Test loss?.  Los cambios de ambas metricas en cada epoch se muestran interactivamente en la parte superior derecha de la pantalla, en una pequena grafica, donde si la loss es reducida la curva va hacia abajo. La test loss se pinta en color negro, y la training loss se pinta en gris.
 
@@ -1227,10 +1193,10 @@ Y, como antes,  usaremos ?X1? y ?X2? para la entrada. Sugiero comenzar con una s
 
 En la parte superior derecha vemos que los valores iniciales de la ?Test loss? y ?Training loss? son altos (al lector le pueden salir valores diferentes dado que los valores iniciales son generados de manera aleatoria).  Pero despues de pulsar el boton ?play? puede verse que tanto la ?Training loss? como la ?Test loss? convergen a unos ratios muy bajos  y se mantiene.  Ademas, en este caso, ambas lineas, negra y gris, se superponen perfectamente.
 
-ˇ
+√ø
 
 
-ˇClasificacion con mas de una neurona
+√øClasificacion con mas de una neurona
 Escojamos otro conjunto de datos de partida como el de la figura adjunta:
 
 
@@ -1715,7 +1681,7 @@ El numero de personas que trabajan ya en Deep Learning y empresas que invierten 
 Deep Learning tiene varias propiedades que justifican su papel en la popularidad que esta cogiendo la inteligencia artificial en general, y esta aqui para quedarse. Quizas dentro de unos anos no usemos redes neuronales, pero cualquier cosa que usemos sera heredera directa del Deep Learning moderno y sus conceptos centrales.
 Esta tecnologia ofrece muchas ventajas al permitir en gran numero de casos simplificar procesos de modelizacion, al mismo tiempo que saca provecho de las nuevas y potentes arquitecturas de computacion paralelas en los procesos de entrenamiento de las redes. Tambien es muy importante su versatilidad, muy superior a la mayoria de otras tecnicas de Machine learning, permitiendo entrenar nuevos modelos sin partir de cero, aprovechando tecnicas como las de transfer learning, o haciendolo aplicable a casos donde tenemos un conjunto de datos de entrenamiento pequeno, como estudiaremos en la segunda parte del libro.
 Deep Learning esta sin duda en ebullicion, y no ha llegado a su punto algido a mi entender: segun un estudio de Gartner130, el numero de puestos de trabajo a cubrir para expertos en Deep Learning crecio de casi cero en 2014 a 41?000 el ano pasado. Gran parte de este crecimiento esta siendo impulsado por gigantes de alta tecnologia, como Google, Facebook, Microsoft, Amazon, Apple, IBM, etc. Ademas, Gartner se atreve a predecir que el 80% de los cientificos de datos va a utilizar herramientas de Deep Learning en el 2018.
-ˇLos beneficios de Deep Learning (e inteligencia artificial en general) seran numerosos y significativos para mejorar y re-imaginar los sistemas existentes. Sin duda estamos ante una tecnologia disruptiva. 
+√øLos beneficios de Deep Learning (e inteligencia artificial en general) seran numerosos y significativos para mejorar y re-imaginar los sistemas existentes. Sin duda estamos ante una tecnologia disruptiva. 
 Historicamente hablando, se dice que la primera revolucion industrial utilizo la energia de vapor para mecanizar la produccion en la segunda mitad del siglo XVIII; la segunda revolucion utilizo la electricidad para impulsar la produccion en masa a mediados del XIX, mientras que la tercera, utilizo la electronica y el software en los anos setenta del siglo pasado. Hoy nos encontramos frente a una nueva fuente de creacion de valor en el area de procesamiento de informacion donde todo va a cambiar.
 Por este motivo, desde hace un tiempo en diferentes foros se insiste en que estamos ante la cuarta revolucion industrial, marcada por avances tecnologicos como la inteligencia artificial (Machine Learning, Deep Learning, etc), y en la que los ordenadores seran ?todavia mas sabios?.
 Esto presenta profundas implicaciones en nuestra sociedad tal como la conocemos, pues a consecuencia de ello se esta empezando a generar un vivo debate sobre las repercusiones que tendra la presente revolucion, polarizando la opinion publica en bandos opuestos: los optimistas y los pesimistas, los utopistas y los excesivamente pragmaticos.
@@ -1725,7 +1691,7 @@ En cualquier caso, todos coincidimos en que el mercado laboral cambiara profunda
 Actualmente, algunos de los perfiles profesionales que se salvan de los efectos negativos en esta cuarta revolucion, a parte de los expertos en el area o dominio donde se aplica el Deep Learning,  son los cientificos y cientificas de datos o ingenieros e ingenieras informaticas, los que presenciaremos a nivel profesional un escenario muy afortunado en los anos venideros. 
 Es un efecto curioso el que se esta produciendo. Como contratador de este perfil de profesionales que tambien soy, veo como las entrevistas de contratacion en el sector tambien han cambiado: a menudo se trata de conseguir seducir al candidato contando las excelencias de la empresa, a fin de que la elijan de entre las varias opciones que disponen.
 Pero nada es eterno, y como todo va muy rapido, me atrevo a augurar que esta misma tecnologia de la que estamos hablando provocara que en un futuro no muy lejano se necesiten muchas menos manos para programar, y menos cabezas para pensar algoritmos. 
-En pocos anos, veremos como muchos de los programas que manejaran nuestro dia a dia, hasta ahora construidos en base al modelo de software ?tradicional? programadoˇpor ingenieros e ingenieras en informatica o cientificos y cientificas de datos, se veran reemplazados por un software creado con tecnicas de inteligencia artificial. 
+En pocos anos, veremos como muchos de los programas que manejaran nuestro dia a dia, hasta ahora construidos en base al modelo de software ?tradicional? programado√øpor ingenieros e ingenieras en informatica o cientificos y cientificas de datos, se veran reemplazados por un software creado con tecnicas de inteligencia artificial. 
 No me malinterpreten: me encanta la ?programacion?, y que el exito de Machine Learning se base fundamentalmente en los expertos humanos en el tema, pero creo que la cantidad de codigo que escribiremos los proximos anos decaera. 
 Ya hemos empezado con entornos de interfaces graficos de usuarios que facilitan enormemente el desarrollo de modelos. Pero aun mas, ya hay sistemas de automatizacion de Machine Learning; algunos los llaman AutoML (Automated Machine Learning), para hacer mas productivos a los cientificos y cientificas de datos y que puedan solucionar mas problemas. Pero esta previsto que estos mismos metodos y procesos que el AutoML proveera iran evolucionando, poniendola a disposicion de profesionales no expertos en Machine Learning, ya que el rapido crecimiento de demanda de las aplicaciones de Machine Learning ha creado una demanda de profesionales imposible de cubrir, y esto esta provocando inevitablemente poner el foco en entornos de AutoML que pueden usarse facilmente y sin conocimiento experto.
 En resumen, las maquinas mas inteligentes quizas tambien iran desplazando gradualmente a este selecto grupo de profesionales, con la paradoja de que los ?culpables? de ello seamos, a su vez, sus propios creadores. 
@@ -1735,20 +1701,20 @@ En resumen, las maquinas mas inteligentes quizas tambien iran desplazando gradua
 
 
 Escribir un libro requiere motivacion pero tambien mucho tiempo, y por ello quiero empezar agradeciendo a mi familia el apoyo y la comprension que ha mostrado ante el hecho de que un portatil compartiera con nosotros muchos fines de semana y muchas noches.
-A Ferran JuliÖ, un gran amigo que es licenciado en fisicas e ingeniero en informatica, le agradezco que me acompanara en la escritura de este libro para mejorar su organizacion y lectura. 
+A Ferran Juli‚Ä¶, un gran amigo que es licenciado en fisicas e ingeniero en informatica, le agradezco que me acompanara en la escritura de este libro para mejorar su organizacion y lectura. 
 En esta linea agradecer tambien a Andres Gomez de La Fundacion Publica Galega Centro Tecnoloxico de Supercomputacion de Galicia (CESGA) por su aportacion al hacer una revision a fondo de los textos de este libro.
-A Juan Luis Dominguez, que vino de Jerez para poder leer juntos a Franáois Chollet, le agradezco la ayuda en preparar muchos de los codigos que dan soporte a este libro. Sin Juan Luis ni Maurici YagÅes, con quien debatimos semanalmente sobre estos temas, este libro nunca habria empezado a escribirse.
+A Juan Luis Dominguez, que vino de Jerez para poder leer juntos a Fran‚Ä°ois Chollet, le agradezco la ayuda en preparar muchos de los codigos que dan soporte a este libro. Sin Juan Luis ni Maurici Yag¬Åes, con quien debatimos semanalmente sobre estos temas, este libro nunca habria empezado a escribirse.
 Especial agradecimiento se merece un colega de la UPC y gran amigo, Xavier Giro-i-Nieto. Xavier es una inagotable fuente de inspiracion y conocimiento, con quien estoy codirigiendo las tesis doctorales de Miriam Bellver y Victor Campos, a quien les debo tambien gran parte de conocimiento en estos temas y contenidos de este libro. Y no quiero olvidarme de otros estudiantes como Xisco Sastre, cuyo trabajo final de master trato tambien sobre estos conceptos, siendo un gran estimulo para mi aprendizaje y de cuyos resultados salieron un par de articulos de investigacion y de los que he usado algunas graficas en este libro.
 Han sido muchos los expertos en este tema que no conozco personalmente los que tambien me han ayudado a la hora de escribir, permitiendome que compartiera sus ideas; por ello, menciono en detalle las fuentes en los apartados correspondientes, mas como muestra de agradecimiento que no para que el lector lo tenga que consultar (el lector habra visto que hay mas de un centenar de notas de pie de pagina). 
-Pero de todos los expertos en que me he inspirado, debo hacer una especial mencion a Franáois Chollet, investigador de Google y creador de Keras, a quien tengo la suerte de conocer personalmente. Este libro esta escrito despues que Franáois publicara su libro Deep Learning with Python, el cual me ha sido de gran ayuda e inspiracion y del que he considerado usar algunos de sus ejemplos de codigo compartido en su GitHub.
+Pero de todos los expertos en que me he inspirado, debo hacer una especial mencion a Fran‚Ä°ois Chollet, investigador de Google y creador de Keras, a quien tengo la suerte de conocer personalmente. Este libro esta escrito despues que Fran‚Ä°ois publicara su libro Deep Learning with Python, el cual me ha sido de gran ayuda e inspiracion y del que he considerado usar algunos de sus ejemplos de codigo compartido en su GitHub.
 Mi mas sincero agradecimiento a todos aquellos que han leido parcial o totalmente esta obra antes de ver la luz como Bernat Torres (SOMmobilitat), Fernando Garcia Sedano (Grupsa), Jordi Morera (UPCnet), Guifre Ballester (UPCnet), Sergi Sales (UPCnet)  quienes me han reportado interesantes comentarios para incluir en la version que tienen en sus manos. 
-Mi mayor agradecimiento a mi universidad, la Universitat Politäcnica de Catalunya - UPC Barcelona Tech, y en especial a Agustin Fernandez Jimenez, vicerrector de Transformacion Digital de la UPC por haber escrito el prologo de esta obra y haber hecho una lectura detallada del borrador final. La UPC ha sido el entorno de trabajo que me ha permitido realizar mi investigacion sobre estos temas y acumular los conocimientos que aqui quiero compartir. Universidad que ademas me ofrece dar clases en la Facultat d?InformÖtica de Barcelona a unos alumnos brillantes, quienes me animan a escribir obras como esta.
-Como mencionaba al principio del libro, a investigadores como Ricard GavaldÖ o Jordi Nin les debo que despertaran en mi el interes por estos temas anos atras. Otros, como Rubän Tous o Joan Capdevila que me acompanaran en los primeros pasos. 
-En la misma linea, quiero agradecer al centro de investigacion Barcelona Supercomputing Center - Centro Nacional de Computacion (BSC) y en especial a sus directores Mateo Valero y Josep M. Martorell, y los directores del departamento de Computer Science Jesus Labarta y Eduard Ayguade, quienes me han permitido y apoyado siempre esta däria que tengo de tener que estar parant l?orella a les tecnologias que vendran. 
+Mi mayor agradecimiento a mi universidad, la Universitat Polit≈†cnica de Catalunya - UPC Barcelona Tech, y en especial a Agustin Fernandez Jimenez, vicerrector de Transformacion Digital de la UPC por haber escrito el prologo de esta obra y haber hecho una lectura detallada del borrador final. La UPC ha sido el entorno de trabajo que me ha permitido realizar mi investigacion sobre estos temas y acumular los conocimientos que aqui quiero compartir. Universidad que ademas me ofrece dar clases en la Facultat d?Inform‚Ä¶tica de Barcelona a unos alumnos brillantes, quienes me animan a escribir obras como esta.
+Como mencionaba al principio del libro, a investigadores como Ricard Gavald‚Ä¶ o Jordi Nin les debo que despertaran en mi el interes por estos temas anos atras. Otros, como Rub≈†n Tous o Joan Capdevila que me acompanaran en los primeros pasos. 
+En la misma linea, quiero agradecer al centro de investigacion Barcelona Supercomputing Center - Centro Nacional de Computacion (BSC) y en especial a sus directores Mateo Valero y Josep M. Martorell, y los directores del departamento de Computer Science Jesus Labarta y Eduard Ayguade, quienes me han permitido y apoyado siempre esta d≈†ria que tengo de tener que estar parant l?orella a les tecnologias que vendran. 
 Gracias tambien a Laura Juan por su exquisita revision del texto antes de que este viera la luz; sin su ayuda esta obra no tendria la calidad que tiene. 
 Tambien a Katy Wallace, por poner nombre a esta coleccion en la que se edita esta obra y a Enric Aromi por responder rapido a una dudas de wordpress en pasar este libro a formato HTML. 
-En la promocion de este libro agradezco el apoyo de FIB Alumni, Col˙legi Oficial d'Enginyeria en InformÖtica de Catalunya y el portal de informacion tecnologico TECNONEWS.
-Finalmente, mi agradecimiento a mis alumnos y alumnas que han compartido conmigo la primera edicion de este libro, los ?cap problema?: Martin Acosta, Alessio Addimando, John Jairo Ballestas, Andres Bermudez, Gabriel Cantos, Robert Carausu, Victor Chamizo, Juan de los Reyes, Francesc, de Puig, Pau Figueras, Rafa Genes,  Benat Jimenez, Miquel Lara, Gil Laroussi, Tito Leiva, Irene Lopez, Eduardo Rodriguez, Isabel Samaniego, Marc Tula, Javier Vasquez, Marc Vila y  Jonathan Zarama. ≠Gracias a todos y a todas!
+En la promocion de este libro agradezco el apoyo de FIB Alumni, Col√∫legi Oficial d'Enginyeria en Inform‚Ä¶tica de Catalunya y el portal de informacion tecnologico TECNONEWS.
+Finalmente, mi agradecimiento a mis alumnos y alumnas que han compartido conmigo la primera edicion de este libro, los ?cap problema?: Martin Acosta, Alessio Addimando, John Jairo Ballestas, Andres Bermudez, Gabriel Cantos, Robert Carausu, Victor Chamizo, Juan de los Reyes, Francesc, de Puig, Pau Figueras, Rafa Genes,  Benat Jimenez, Miquel Lara, Gil Laroussi, Tito Leiva, Irene Lopez, Eduardo Rodriguez, Isabel Samaniego, Marc Tula, Javier Vasquez, Marc Vila y  Jonathan Zarama. ¬≠Gracias a todos y a todas!
 
 
 
@@ -1757,208 +1723,7 @@ Finalmente, mi agradecimiento a mis alumnos y alumnas que han compartido conmigo
 
 Acerca del autor
 
-Catedratico en la Universitat Politäcnica de Catalunya132 con 30 anos de experiencia en docencia133 e investigacion134 en computacion de altas prestaciones, con importantes publicaciones cientificas135 y proyectos de I+D136 en empresas e instituciones. Su espiritu emprendedor le ha llevado a aplicar estos sistemas en la analitica avanzada sobre el Big Data, y en estos momentos su investigacion se centra en la supercomputacion aplicada a la Inteligencia Artificial en general y al Deep Learning en particular, area en la que codirigiendo tres tesis doctorales. Sus investigaciones se han publicado en los principales foros de este campo, incluyendo el congreso International Conference on Learning Representation (ICLR 2018) y workshops de los congresos Computer Vision and Pattern Recognition (CVPR 2017) y Neural Information Processing Systems (NIPS 2016, 2017). En estas publicaciones se ha colaborado con investigadores de la UPC, Columbia University, Google y Facebook.
+Catedratico en la Universitat Polit≈†cnica de Catalunya132 con 30 anos de experiencia en docencia133 e investigacion134 en computacion de altas prestaciones, con importantes publicaciones cientificas135 y proyectos de I+D136 en empresas e instituciones. Su espiritu emprendedor le ha llevado a aplicar estos sistemas en la analitica avanzada sobre el Big Data, y en estos momentos su investigacion se centra en la supercomputacion aplicada a la Inteligencia Artificial en general y al Deep Learning en particular, area en la que codirigiendo tres tesis doctorales. Sus investigaciones se han publicado en los principales foros de este campo, incluyendo el congreso International Conference on Learning Representation (ICLR 2018) y workshops de los congresos Computer Vision and Pattern Recognition (CVPR 2017) y Neural Information Processing Systems (NIPS 2016, 2017). En estas publicaciones se ha colaborado con investigadores de la UPC, Columbia University, Google y Facebook.
 Desde sus inicios lidera un grupo de investigacion137 en el Barcelona Supercomputer Center138. Con su talante visionario y dinamizador de las nuevas tecnologias, durante estos ultimos anos ha realizado diferentes actividades para contribuir a la definicion de que estrategia seguir a nivel tecnologico ante los nuevos retos que estas tecnologias representan. Actualmente es consejero delegado del rector de la UPC en el consejo de administracion de la empresa iThinkUPC139, y actua como formador y experto140 para diversas organizaciones y empresas; a su vez, tambien ha escrito varios libros tecnicos141, imparte conferencias142 y colabora con diferentes medios de comunicacion143, radio y television144. Mantiene su blog145 desde el 2006 y recientemente ha creado una seccion en castellano para hablar de inteligencia artificial y tecnologias relacionadas en www.InteligenciaArtificial.Barcelona146. Puede encontrar mas informacion en www.JordiTorres.Barcelona.
 
-
-
-
-
-
-
-1 Vease GithHub Companion Jupyter notebooks for the book ?Deep Learning with Python? by Franáois Chollet Accesible en: https://github.com/fchollet/deep-learning-with-python-notebooks
-2 Para aquellos que no conozcan a que nos referimos por GPU, no se preocupen, las presentaremos mas adelante.
-3Vease mas en las paginas de documentacion de Keras  disponibles en:  https://keras.io
-4 Remito aqui la cuenta de Twitter del creador: https://twitter.com/fchollet, que veran que es una persona muy activa en twitter.
-5 Vease https://jupyter.org
-6 Pagina personal de Ricard GavaldÖ [online]. Disponible en: http://www.lsi.upc.edu/~gavalda/
-7 Pagina personal de Jordi Nin [online]. Disponible en: https://www.linkedin.com/in/ninjordi/
-8 Quoc Le and Marc'Aurelio Ranzato and Rajat Monga and Matthieu Devin and Kai Chen and Greg Corrado and Jeff Dean and Andrew Ng, Building High-level Features Using Large Scale Unsupervised Learning .International Conference in Machine Learning, ICML 2012 [online]. Disponible en: https://arxiv.org/abs/1112.6209 [Accedido: 12/02/2018]
-9 Blog de Jordi Torres. ?Barcelona Supercomputing Center starts to work on Deep Learning? Junio 2014). [online]. Disponible en: http://jorditorres.org/barcelona-supercomputing-center-starts-to-works-on-deep-learning/
-10 Ley de Moore. Wikipedia. [online]. Disponible en: https://es.wikipedia.org/wiki/Ley_de_Moore [Accedido: 12/03/2018]
-11 Pagina web del Barcelona Supercomputing Center. http://www.bsc.es
-12  Operaciones de coma flotante por segundo. Wikipedia. [online]. Disponible en: https://es.wikipedia.org/wiki/Operaciones_de_coma_flotante_por_segundo [Accedido: 12/03/2018]
-13 Top 500 List ? November 2012. [online] Disponible en: https://www.top500.org/list/2012/11/?_ga=2.211333845.1311987907.1527961584-375587796.1527961584 [Accedido: 12/03/2018]
-14 Marenostrum 3. Barcelona Supercomputing Center. [online]. Disponible en: https://www.bsc.es/marenostrum/marenostrum/mn3 [Accedido: 12/03/2018]
-15 Krizhevsky, A., Sutskever, I. and Hinton, G. E. ImageNet Classification with Deep Convolutional Neural Networks NIPS 2012: Neural Information Processing Systems, Lake Tahoe, Nevada [online]. Disponible en:http://www.cs.toronto.edu/~kriz/imagenet_classification_with_deep_convolutional.pdf
-16  Russakovsky, O., Deng, J., Su, H. et al. Int J Comput Vis (2015) 115: 211. https://doi.org/10.1007/s11263-015-0816-y  https://arxiv.org/abs/1409.0575
-17 Wikipedia. Unidad de procesamiento grafico o GPU. [online] Disponible en: https://es.wikipedia.org/wiki/Unidad_de_procesamiento_grafico [Accedido: 12/02/2018]
-18 TeraFlops es una medida de rendimiento en informatica, especialmente en calculos cientificos. Se refiere a 1?000?000?000?000 operaciones en coma flotante por segundo.
-19 Vease https://www.top500.org/green500/
-20Wikipedia. CUDA. [online]. Disponible en:  https://es.wikipedia.org/wiki/CUDA 
-21 Vease https://openai.com
-22 Vease https://blog.openai.com/ai-and-compute/ 
-23 https://blog.openai.com/content/images/2018/05/compute_diagram-log@2x-3.png
-24 Campos, V., F. Sastre, M. Yagues, J. Torres, and X. Giro-I-Nieto.ˇScaling a Convolutional Neural Network for Classification of Adjective Noun Pairs with TensorFlow on GPU Clusters.ˇ2017 17th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGRID)
-
-25 Campos, V., F. Sastre, M. Yagues, M. Bellver, X. Giro-I-Nieto, and J. Torres. Distributed training strategies for a computer vision deep learning algorithm on a distributed GPU cluster. Procedia Computer Science. Elsevier. Volume 108, Pag. 315-324.ˇhttps://doi.org/10.1016/j.procs.2017.05.074
-26 MPI Wikipedia. https://es.wikipedia.org/wiki/Interfaz_de_Paso_de_Mensajes
-27 Wikipedia. Tensor Processing Unit. [online]. Disponible en:  https://en.wikipedia.org/wiki/Tensor_processing_unit [Accedido: 20/04/2018]
-28 Conferencia Google IO 2018 (8-10 mayo 2018). Videos de todas las sesiones. [online]. Disponible en: https://www.youtube.com/playlist?list=PLOU2XLYxmsIInFRc3M44HUTQc3b_YJ4-Y [Accedido: 16/05/2018]
-29  Vease https://cloud.google.com/blog/big-data/2017/05/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu
-30 Big Bets on A.I. Open a New Frontier for Chip Start-Ups, Too. The New York Times. January 14, 2018 [online]. Disponible en: https://www.nytimes.com/2018/01/14/technology/artificial-intelligence-chip-start-ups.html [Accedido: 20/04/2018]
-31 Marenostrum. Barcelona Supercomputing Center [online] Disponible en : https://www.bsc.es/marenostrum/marenostrum [Accedido: 20/05/2018]
-32 IBM Power System AC922 Introduction and Technocal Overview- IBM RedBooks by Andexandre Bicas Caldeira. March 2018. [online]. Disponible en http://www.redbooks.ibm.com/redpapers/pdfs/redp5472.pdf  [Accedido: 20/05/2018]
-
-33 En el momento de escribir el libro no se ha instalado este software (solo el hardware esta preparado), pero esta previsto que este disponible antes del verano del 2018. 
-34 IBM PowerAI: Deep Learning Unleashed on IBM Power Systems Servers. IBM RedBooks. March 2018. [online]. Disponible en   https://www.dropbox.com/s/fd3oiuttqdeilut/IBMpowerAI.pdf?dl=0  [Accedido: 20/05/2018]
-35 Justo en el momento de finalizar el contenido de este libro NVIDIA ha presentado una nueva version de las V100 con 32 GB de memoria. [online]. Disponible en https://www.top500.org/news/nvidia-refreshes-v100-gpus-upgrades-dgx-lineup/
-36 Tesla V100 NVIDIA web. [online]. Disponible en  http://www.nvidia.com/v100 [Accedido: 20/03/2018]
-
-37 CTE-POWER User?s Guide. Barcelona Supercomputing Center 2018 [online]. Disponible en https://www.bsc.es/user-support/power.php [Accedido: 20/05/2018]
-38 El impacto de la AI en la historia de la humanidad es comparable con la electricidad y el fuego. Blog. [online] Disponible en: http://jorditorres.org/inteligencia-artificial-electricidad-fiego/ [Accedido: 18/03/2018]
-39 Stuart J. Russell. Wikipedia. [online]. Disponible en: https://en.wikipedia.org/wiki/Stuart_J._Russell [Accedido: 16/04/2018]
-40 Peter Norvig Wikipedia. [online]. Disponible en: https://en.wikipedia.org/wiki/Peter_Norvig [Accedido: 16/04/2018]
-41 Artificial Intelligence: A Modern Approach (AIMA) ˙3rd edition, Stuart J Russell and Peter Norvig, Prentice hall, 2009. ISBN 0-13-604259-7
-42 AI winter. Wikipedia. [online]. Disponible en: https://en.wikipedia.org/wiki/AI_winter [Accedido: 16/04/2018]
-43 Deep Learning. I Goodfellow, Y. Bengio and A Corville. MIT Press 2016. Disponible tambien en acceso libre en  http://www.deeplearningbook.org [consulta: 20/01/2018].
-44 Los datos que aparecen en esta seccion son los disponibles  en el momento de escribir esta seccion a principios del ano 2018.  
-45 Wikipedia,  NoSQL. [online]. Disponible en: https://es.wikipedia.org/wiki/NoSQL [Accedido: 15/04/2018]
-46 The ImageNet Large Scale Visual Recognition Challenge (ILSVRC). [online]. Disponible en: www.image-net.org/challenges/LSVRC. [Accedido: 12/03/2018]
-47 MNIST [online]. Disponible en: http://yann.lecun.com/exdb/mnist/ [Accedido: 12/03/2018]
-48 CIFAR [online]. Disponible en: http://www.cs.toronto.edu/~kriz/cifar.html [Accedido:12/03/2018]
-49 SVHN [online]. Disponible en: http://ufldl.stanford.edu/housenumbers/ [Accedido: 12/03/2018]
-50 STL [online]. Disponible en: http://ai.stanford.edu/~acoates/stl10/ [Accedido: 12/03/2018]
-51 IMDB [online]. Disponible en: https://www.kaggle.com/pankrzysiu/keras-imdb-reviews [Accedido: 12/03/2018]
-52 Kaggle [online]. Disponible en: ttp://www.kaggle.com [Accedido: 12/03/2018]
-53 Empresas en la nube: ventajas y retos del Cloud Computing. Jordi Torres. Editorial Libros de Cabecera. 2011.
-54 Wikipedia. REST. [online]. Disponible en: https://en.wikipedia.org/wiki/Representational_state_transfer [Accedido: 12/03/2018]
-55 Amazon ML [online]. Disponible en:  https://aws.amazon.com/aml/ [Accedido: 12/03/2018]
-56 SageMaker [online]. Disponible en:  https://aws.amazon.com/sagemaker/ [Accedido: 12/03/2018]
-57 Azure ML Studio [online]. Disponible en:  https://azure.microsoft.com/en-us/services/machine-learning-studio/ [Accedido: 12/03/2018]
-58 Azure Intelligent Gallery [online]. Disponible en:  https://gallery.azure.ai [Accedido: 12/03/2018]
-59 Google Prediction API [online]. Disponible en:  https://cloud.google.com/prediction/docs/ [Accedido: 12/03/2018]
-60 Google ML engine [online]. Disponible en:  https://cloud.google.com/ml-engine/docs/technical-overview [Accedido: 12/03/2018]
-61 Watson Analytics [online]. Disponible en:  https://www.ibm.com/watson/ [Accedido: 12/03/2018]
-62 PredicSis [online]. Disponible en:  https://predicsis.ai [Accedido: 12/03/2018]
-63 BigML [online]. Disponible en:  https://bigml.com [Accedido: 12/03/2018]
-64 Vease https://www.kdnuggets.com/2018/02/top-20-python-ai-machine-learning-open-source-projects.html
-65 Vease http://tensorflow.org 
-66 Vease https://github.com/tensorflow/tensorflow
-67 Vease https://keras.io
-68 Vease http://pytorch.org
-69 Vease http://www.openmp.org
-70 Vease http://scikit-learn.org
-71 Vease http://scikit-learn.org/stable/modules/preprocessing.html
-72 Vease http://deeplearning.net/software/theano 
-73 Vease http://caffe.berkeleyvision.org
-74 Vease https://caffe2.ai
-75 Vease https://github.com/Microsoft/CNTK
-76 Vease https://mxnet.apache.org
-77 Vease https://deeplearning4j.org
-78 Vease https://chainer.org
-79 Vease https://developer.nvidia.com/digits
-80 Vease http://kaldi-asr.org/doc/dnn.html
-81 Vease https://lasagne.readthedocs.io/en/latest/
-82 Vease https://github.com/autumnai/leaf
-83 Vease http://www.vlfeat.org/matconvnet/
-84 Vease http://www.opendeep.org
-85 Vease https://github.com/dmlc/minerva
-86 Vease https://github.com/laonbud/SoooA/
-87 Vease https://arxiv.org
-88 Vease https://jupyter.org
-89 Vease http://jupyter.org/install
-90 Vease Github del libro https://github.com/JordiTorresBCN/Deep-Learning-Introduccion-practica-con-Keras
-91 Vease https://keras.io/#installation
-92Vease https://www.tensorflow.org/install/
-93 Vease https://www.docker.com 
-94 Vease https://store.docker.com/search?type=edition&offering=community
-95 Vease https://docs.docker.com/toolbox/toolbox_install_windows/
-96 Vease https://github.com/jorditorresBCN/dlaimet/blob/master/windows_proxy.md
-97 Documentacion AMI de aprendizaje profundo en AWS. [online]. Disponible en:  https://aws.amazon.com/es/documentation/dlami/?nc1=h_ls [Accedido: 1/04/2018]
-98 Vease https://colab.research.google.com
-99 The MNIST database of handwritten digits. [en linea]. Disponible en: 
- http://yann.lecun.com/exdb/mnist [Consulta: 24/02/2017].
-100 Remarcar que sin duda este paso de ?limpiar? y ?preparar? los datos es la fase mas costosa en tiempo y desagradecida con datos reales.
-101 Wikipedia, (2016). Antialiasing [en linea]. Disponible en:
- https://es.wikipedia.org/wiki/Antialiasing [Consulta: 9/01/2016]. 
-102 Wikipedia, (2018). Sigmoid function [en linea]. Disponible en:
- https://en.wikipedia.org/wiki/Sigmoid_function [Consulta: 2/03/2018]. 
-103 Wikipedia (2018). Perceptron [en linea]. Disponible en https://en.wikipedia.org/wiki/Perceptron [Consulta 22/12/2018]
-104 Wikipedia, (2018). Softmax function [en linea]. Disponible en: https://en.wikipedia.org/wiki/Softmax_function [Consulta: 22/02/2018]. 
-105 TensorFlow, (2016) Tutorial MNIST beginners. [en linea]. Disponible en:
-https://www.tensorflow.org/versions/r0.12/tutorials/mnist/beginners/ 
-[Consulta: 16/02/2018].
-
-106 En caso que el lector este leyendo de un libro en papel  en blanco y negro, y quiera ver las imagenes en color, recuerde que el libro se encuentra disponible en www.JordiTorres.Barcelona/DeepLearning  donde pueden encontrar las figuras en color.
-107 Vease https://keras.io/getting-started/functional-api-guide/
-108 Vease https://keras.io/models/sequential/
-109 https://keras.io/layers/core/#dense
-110 https://keras.io/initializers/#usage-of-initializers
-111 Confusion Matrix. Wikipedia. [online]. Disponible en: https://en.wikipedia.org/wiki/Confusion_matrix [Accedido: 30/04/2018]
-112 http://scikit-learn.org/stable/
-113 http://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html
-114 Vease https://keras.io/activations/
-115 Vease https://keras.io/losses/
-116 Vease https://keras.io/optimizers/
-117 CS231n Convolutional Neural Networks for Visual Recognition. [online] Disponible en http://cs231n.github.io/neural-networks-2/#init [Accedido 20/04/2018]
-118 Vease http://keras.io/optimizers
-119 Vease http://playground.tensorflow.org
-120 Unsupervised learning of hierarchical representations with convolutional deep belief networks. H Lee, R. Grosse, R Ranganath and A. Y Ng.. Communications ACM, Vol 54 Issue 10, October 2011. 
-121 GIMPS - programa de manipulacion de imagenes de GNU Apartado 8.2. 
-Matriz de convolucion [en linea]. Disponible en:
-https://docs.gimp.org/es/plug-in-convmatrix.html [Consulta: 5/1/2016].
-
-122  Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner. Gradient-based learning applied to document recognition. Proceedings of the IEEE, november 1998. [en linea] http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf [consulta 15/05/2018]
-123 A. Krizhevsky, I. Sutskever and G.E. Hinton. ImageNet Classification with Deep Convolutional Neural Networks. Neural Information Processing Systems, Lake Tahoe, Nevada. NIPS 2012.  [en linea]  http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf  [consulta 15/05/2018]
-124 https://arxiv.org/abs/1409.4842 [en linea]  [consulta 15/05/2018]
-125 https://arxiv.org/abs/1602.07261[en linea]  [consulta 15/05/2018]
-126 http://www.robots.ox.ac.uk/~vgg/research/very_deep/ [en linea] [consulta 15/05/2018]
-127 J Gu, Z. Wang, J. Kuen, L. Ma, A. Shahroudy, B. Shuai, T. Liu, X. Wang and G. Wang. Recent Advances in Convolutional Neural Networks. Journal Pattern Recognition Volumen 77, Issue C, May 2018. Pages 354-377. Elsevier Science  [en linea] preprint version https://arxiv.org/pdf/1512.07108v5.pdf [consulta 15/05/2018]
-128 Vease https://keras.io/applications/
-129 El lector habra visto que con el metodo summary() obtenemos el ?Non-training param?, es decir el numero de parametros que no deben ser entrenados. Dejamos este parametro para explicarlo en la segunda parte del libro. 
-130 Vease GARTNER (2017). Neural Networks and Modern BI Platforms Will Evolve Data and Analytics [online]. Available at:
-http://www.gartner.com/smarterwithgartner/nueral-networks-and-modern-bi-platforms-will-evolve-data-and-analytics/ [Accessed: 12/05/2017].
-
-131 The Future of Jobs. Global Challenge Insight Report . Workd Economic Forum January 2016 http://www3.weforum.org/docs/WEF_Future_of_Jobs.pdf [Accessed: 12/03/2018]
-132 Vease http://www.upc.edu/es?set_language=es
-133 Vease http://jorditorres.org/research-teaching/activity/
-134 Vease http://jorditorres.org/research-teaching/activity/
-135 Vease http://jorditorres.org/research-teaching/publications/
-136 Vease http://jorditorres.org/research-teaching/research-projects/
-137 Vease http://jorditorres.org/research-teaching/research-group/
-138 Vease https://www.bsc.es
-139 Vease https://www.ithinkupc.com/es
-140 Vease http://jorditorres.org/speaking-media/expert-advisor-consultant/
-141 Vease http://jorditorres.org/speaking-media/writer/
-142 Vease http://jorditorres.org/conferencias/
-143 Vease http://jorditorres.org/speaking-media/press-articles/
-144 Vease http://jorditorres.org/speaking-media/radio-tv/
-145 Vease http://jorditorres.org/blog/
-146 Vease http://jorditorres.org/www-inteligenciaartificial-barcelona/
----------------
-
-
-------------------------------------------------------------
-
-
----------------
-
-
-------------------------------------------------------------
-
-
-1. Ante una nueva tecnologia disruptiva
-
-1.1. La inteligencia artificial esta cambiando nuestras vidas
-
-(BORRADOR 27/04/2018)	8
-
-(BORRADOR 27/04/2018)	7 
-
-
-
-56
-
-4. Redes neuronales convolucionales
-
-4.5. Redes  neuronales convolucionales con nombre propio
-
- 	8
-
-	7 
-
-
-
-56
 
