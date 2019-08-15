@@ -1,4 +1,155 @@
 
+Deep Learning
+Introduccion practica con Keras
+
+
+PRIMERA PARTE
+
+
+Jordi Torres
+
+
+2018201820182018201820182018
+
+
+201820182018201820182018
+
+
+
+
+
+
+
+
+
+
+Este libro est  sujeto a una licencia Creative Commons BY NC SA: para cualquier explotacion de la obra autorizada por la licencia hara falta reconocer la autoria. No se permite un uso comercial de la obra original ni de las posibles obras derivadas, distribucion de las cuales se debe hacer con una licencia igual a la que regula la obra original.
+
+
+
+
+
+
+
+
+
+
+
+A Domingo
+
+
+
+Indice:
+
+
+
+Prologo	11
+Prefacio: la pasion de ensenar	13
+Acerca de este libro	19
+A quien va dirigido el libro	19
+Organizacion del libro	20
+Requisitos para seguir el libro	23
+ Por que Keras	24
+Introduccion: la supercomputacion, corazon de Deep Learning	27
+La primera GPU en la competicion Imagenet	29
+Crecimiento exponencial de la capacidad de computacion como motor del Deep Learning	31
+Aceleracion de Deep Learning con sistemas paralelos	33
+Aceleracion de Deep Learning con sistemas distribuidos	34
+Aceleracion del Deep Learning con hardware especializado	36
+Una nueva generacion de supercomputadores disenados para Deep Learning e Inteligencia Artificial	37
+PRIMERA PARTE: Hello World!	43
+1	Ante una nueva tecnologia disruptiva	45
+1.1	La inteligencia artificial esta cambiando nuestras vidas	47
+1.2	Inteligencia artificial, Machine Learning y Deep Learning	48
+Inteligencia artificial	49
+Machine Learning	50
+Terminologia basica de Machine Learning	52
+Redes neuronales artificiales y Deep Learning	54
+1.3	 Por que ahora?	58
+Los datos, el combustible para la inteligencia artificial	59
+Democratizacion de la computacion	60
+Un mundo open-source para la comunidad Deep Learning	62
+Una cultura de publicacion abierta	64
+Mejoras en los algoritmos	65
+1.4	Preparar el entorno de trabajo	66
+Jupyter notebook	66
+Keras	67
+Docker	67
+Cloud	70
+2	Redes neuronales densamente conectadas	73
+2.1	Caso de estudio: reconocimiento de digitos	75
+2.2	Perceptron	77
+Algoritmos de regresion	78
+Una neurona artificial simple	78
+Multi-Layer Perceptron	83
+2.3	Funcion de activacion softmax	85
+2.4	Datos para alimentar una red neuronal	90
+Conjunto de datos para entrenamiento, validacion y prueba	90
+Precarga de los datos en Keras	91
+Representacion de los datos en Keras	92
+Normalizacion de los datos de entrada	93
+2.5	Redes densamente conectadas en Keras	97
+Clase Sequential en Keras	97
+Definicion del modelo	98
+2.6	Pasos para implementar una red neuronal en Keras	101
+Configuracion del proceso de aprendizaje	101
+Entrenamiento del modelo	102
+Evaluacion del modelo	104
+Generacion de predicciones	108
+3	Como se entrena una red neuronal	111
+3.1	Proceso de aprendizaje de una red neuronal	113
+3.2	Funciones de activacion	116
+Linear	116
+Sigmoid	117
+Tanh	118
+Softmax	118
+ReLU	119
+3.3	Elementos del backpropagation	119
+Funcion de loss	120
+Optimizadores	121
+Gradient descent	121
+Stochastic Gradient Descent (SGD)	124
+3.4	Parametrizacion de los modelos	125
+Parametros e hiperparametros	127
+Numero de epochs	128
+Batch size	128
+Learning rate	128
+Learning rate decay	129
+Momentum	130
+Inicializacion de los pesos de los parametros	131
+Hiperparametros y optimizadores en Keras	132
+3.5	Practicando con una clasificacion binaria	133
+TensorFlow Playground	134
+Clasificacion con una sola neurona	138
+Clasificacion con mas de una neurona	139
+Clasificacion con varias capas	141
+4	Redes neuronales convolucionales	145
+4.1	Introduccion a las redes neuronales convolucionales	147
+4.2	Componentes basicos de una red neuronal convolucional	149
+Operacion de convolucion	149
+Operacion de pooling	154
+4.3	Implementacion de un modelo basico en Keras	157
+Arquitectura basica de una red neuronal convolucional	157
+Un modelo simple	158
+Entrenamiento y evaluacion del modelo	162
+Argumentos del metodo fit	163
+4.4	Hiperparametros de la capa convolucional	164
+Tamano y numero de filtros	165
+Padding	165
+Stride	168
+4.5	Redes  neuronales convolucionales con nombre propio	169
+Clausura: se avecinan cambios	177
+ Moda o ha venido para quedarse?	177
+ Y nosotros, los que ?programamos??	179
+Anexo: notebooks	183
+Capitulo 2	183
+Capitulo 3	190
+Capitulo 4	194
+Agradecimientos	203
+Acerca del autor	207
+
+
+
 
 Prologo
 
