@@ -9,26 +9,6 @@ PRIMERA PARTE
 Jordi Torres
 
 
-2018201820182018201820182018
-
-
-201820182018201820182018
-
-
-
-
-
-
-
-
-
-
-Este libro est  sujeto a una licencia Creative Commons BY NC SA: para cualquier explotacion de la obra autorizada por la licencia hara falta reconocer la autoria. No se permite un uso comercial de la obra original ni de las posibles obras derivadas, distribucion de las cuales se debe hacer con una licencia igual a la que regula la obra original.
-
-
-
-
-
 
 
 
@@ -190,12 +170,12 @@ Siempre me ha interesado la tecnologia de proxima generacion y su impacto, y por
 Sin duda, los avances tecnologicos en inteligencia artificial, junto con el resto de tecnologias mencionadas, ya estan aqui; eso nos permite construir una sociedad que mejora la vida de las personas, aunque tambien es cierto que la perspectiva del futuro cercano de estas tecnologias presenta alguna que otra incertidumbre.
 Sin embargo, estoy convencido de que podemos conseguir, a medida que nos vayamos encontrando con nuevos problemas debido a estas nuevas tecnologias, encontrar como sociedad sus soluciones. Para ello, es clave que todos y cada uno de los que ya trabajamos en el mundo tecnologico consigamos una mejor comprension de estos nuevos temas que estan revolucionando la informatica y podamos darle el uso correcto, ademas de saber explicarlos.
 Esta obra es la primera parte del libro Deep Learning - Introduccion practica con Keras que estoy escribiendo durante el tiempo libre que me deja mi actividad academica y de investigacion. Mi ilusion era poder terminar la obra entera antes de verano, pero debo ser realista y aceptar que no podra ser asi, y sin duda necesitare muchisimas mas horas (meses :) ) para poder terminarla.
-Pero como ya esta finalizada la primera mitad del libro, siendo esta la parte mas basica del tema (la que yo llamo Hello world!) y la estoy usando para dar soporte a mis clases en la Facultat d?Inform…tica de Barcelona de la Universitat PolitŠcnica de Catalunya ? Barcelona Tech (UPC), he decidido avanzar su publicacion de forma abierta en mi pagina web personal www.JordiTorres.Barcelona/DeepLearning para ofrecer a la comunidad interesada un primer contacto con esta tecnologia y permitirle iniciarse por su cuenta en la programacion de Deep Learning sin tener que esperar a tener la obra completa. Si el lector prefiere acceder a este contenido en formato ebook o papel, puede obtenerlo en sus portales de compra. 
+Pero como ya esta finalizada la primera mitad del libro, siendo esta la parte mas basica del tema (la que yo llamo Hello world!) y la estoy usando para dar soporte a mis clases en la Facultat d Inform…tica de Barcelona de la Universitat Politecnica de Catalunya   Barcelona Tech (UPC), he decidido avanzar su publicacion de forma abierta en mi pagina web personal www.JordiTorres.Barcelona/DeepLearning para ofrecer a la comunidad interesada un primer contacto con esta tecnologia y permitirle iniciarse por su cuenta en la programacion de Deep Learning sin tener que esperar a tener la obra completa. Si el lector prefiere acceder a este contenido en formato ebook o papel, puede obtenerlo en sus portales de compra. 
 Como reza el titulo, este libro que estoy preparando solo pretende ser una introduccion practica a Deep Learning, una de las areas mas activas actualmente en el ambito de la inteligencia artificial, no un tratado exhaustivo sobre el tema, pues esta dirigido a un lector que dispone de conocimientos en programacion pero que aun no ha tenido la oportunidad de iniciarse a estos nuevos conceptos claves en la informatica, y quiere descubrir algunos de los aspectos mas de vanguardia de esta tecnologia.  
 Ya les avanzo que el libro sera una invitacion a usar el teclado de su ordenador mientras va aprendiendo: nosotros lo llamamos learn by doing, y mi experiencia como profesor en la UPC me indica que es una aproximacion que funciona muy bien entre ingenieros e ingenieras que tratan de iniciarse en un nuevo tema.
 Por esta razon, el libro tendra un caracter eminentemente practico, y por ello se reducira todo lo posible la parte teorico-matematica, aunque es estrictamente necesario recurrir a ciertos detalles teoricos para ofrecer un conocimiento solido al lector. Esto conlleva que en sus paginas se iran intercalando conocimientos teoricos y practicos, complementarios en el proceso de aprendizaje. 
 Espero con ello aportar mi granito de arena en este mundo de la formacion que tanto me apasiona; deseo tambien que sirva de guia a cualquier navegante interesado en empezar su aventura en este campo tan interesante. 
-Dejenme decirles: ­gracias por estar leyendo este libro! El simple hecho me reconforta y justifica mi esfuerzo en escribirlo. Aquellos que me conocen saben que la docencia (y la formacion en general) es una de mis pasiones, y me mantiene con vigor y energia. Como me recuerda a veces mi querida madre, cuando era pequeno decia que de mayor queria ensenar, ser maestro. Pues aqui me tienen, ­Sueno cumplido!
+Dejenme decirles: gracias por estar leyendo este libro! El simple hecho me reconforta y justifica mi esfuerzo en escribirlo. Aquellos que me conocen saben que la docencia (y la formacion en general) es una de mis pasiones, y me mantiene con vigor y energia. Como me recuerda a veces mi querida madre, cuando era pequeno decia que de mayor queria ensenar, ser maestro. Pues aqui me tienen, Sueno cumplido!
 
 
 
@@ -251,7 +231,7 @@ El primer capitulo contiene una motivacion al tema y las instrucciones para prep
 En el segundo capitulo, a partir de un caso de estudio, se explican los conceptos basicos de una red neuronal. Luego introducimos las redes neuronales densamente conectadas y mostramos su implementacion con Keras.
 En el tercer capitulo presentamos como se realiza el proceso de aprendizaje de una red neuronal, adentrandonos en algunos de sus componentes mas importantes. La segunda parte del capitulo invita al lector a que practique los conocimientos adquiridos con TensorFlow playground.
 En el capitulo cuarto, ya preparado el lector con una base importante de como son las redes neuronales, presentamos e implementamos las redes neuronales convolucionales, una de las familias de redes neuronales mas populares en estos momentos. 
-La segunda parte del libro abarca una introduccion a todos los conceptos que actualmente se tratan en Deep Learning para que el lector al acabar el libro completo tenga una vision general del tema y pueda empezar por su cuenta a profundizar en aquellos aspectos que crea que le aportan mas valor. Espero que esta parte de la obra pueda ver la luz en pocos meses. Por favor, ­crucen los dedos conmigo!.
+La segunda parte del libro abarca una introduccion a todos los conceptos que actualmente se tratan en Deep Learning para que el lector al acabar el libro completo tenga una vision general del tema y pueda empezar por su cuenta a profundizar en aquellos aspectos que crea que le aportan mas valor. Espero que esta parte de la obra pueda ver la luz en pocos meses. Por favor, crucen los dedos conmigo!.
 En estos momentos, el borrador del quinto capitulo describe como se pueden obtener los datos y como se preprocesan, con especial atencion en el caso de ser texto cuando se quiere entrenar una red neuronal. A continuacion analizamos desde un punto de vista absolutamente practico como puede ser la prevencion del sobreajuste (overfitting) de los modelos a los datos.
 El capitulo sexto lo centraremos en uno de los problemas mas habituales en Deep Learning en el mundo real, como es el no tener suficientes datos para entrenar nuestras redes. Se explicaran varias tecnicas frecuentemente utilizadas en estos momentos en proyectos reales (transfer learning, data augmentation, etc.).
 En el septimo capitulo se introducen las redes neuronales recurrentes, que a pesar de tener requerimientos de computacion importantes se estan popularizando mucho en la industria.
@@ -1695,35 +1675,3 @@ En pocos anos, veremos como muchos de los programas que manejaran nuestro dia a 
 No me malinterpreten: me encanta la ?programacion?, y que el exito de Machine Learning se base fundamentalmente en los expertos humanos en el tema, pero creo que la cantidad de codigo que escribiremos los proximos anos decaera. 
 Ya hemos empezado con entornos de interfaces graficos de usuarios que facilitan enormemente el desarrollo de modelos. Pero aun mas, ya hay sistemas de automatizacion de Machine Learning; algunos los llaman AutoML (Automated Machine Learning), para hacer mas productivos a los cientificos y cientificas de datos y que puedan solucionar mas problemas. Pero esta previsto que estos mismos metodos y procesos que el AutoML proveera iran evolucionando, poniendola a disposicion de profesionales no expertos en Machine Learning, ya que el rapido crecimiento de demanda de las aplicaciones de Machine Learning ha creado una demanda de profesionales imposible de cubrir, y esto esta provocando inevitablemente poner el foco en entornos de AutoML que pueden usarse facilmente y sin conocimiento experto.
 En resumen, las maquinas mas inteligentes quizas tambien iran desplazando gradualmente a este selecto grupo de profesionales, con la paradoja de que los ?culpables? de ello seamos, a su vez, sus propios creadores. 
-
-
-
-
-
-Escribir un libro requiere motivacion pero tambien mucho tiempo, y por ello quiero empezar agradeciendo a mi familia el apoyo y la comprension que ha mostrado ante el hecho de que un portatil compartiera con nosotros muchos fines de semana y muchas noches.
-A Ferran Juli…, un gran amigo que es licenciado en fisicas e ingeniero en informatica, le agradezco que me acompanara en la escritura de este libro para mejorar su organizacion y lectura. 
-En esta linea agradecer tambien a Andres Gomez de La Fundacion Publica Galega Centro Tecnoloxico de Supercomputacion de Galicia (CESGA) por su aportacion al hacer una revision a fondo de los textos de este libro.
-A Juan Luis Dominguez, que vino de Jerez para poder leer juntos a Fran‡ois Chollet, le agradezco la ayuda en preparar muchos de los codigos que dan soporte a este libro. Sin Juan Luis ni Maurici Yages, con quien debatimos semanalmente sobre estos temas, este libro nunca habria empezado a escribirse.
-Especial agradecimiento se merece un colega de la UPC y gran amigo, Xavier Giro-i-Nieto. Xavier es una inagotable fuente de inspiracion y conocimiento, con quien estoy codirigiendo las tesis doctorales de Miriam Bellver y Victor Campos, a quien les debo tambien gran parte de conocimiento en estos temas y contenidos de este libro. Y no quiero olvidarme de otros estudiantes como Xisco Sastre, cuyo trabajo final de master trato tambien sobre estos conceptos, siendo un gran estimulo para mi aprendizaje y de cuyos resultados salieron un par de articulos de investigacion y de los que he usado algunas graficas en este libro.
-Han sido muchos los expertos en este tema que no conozco personalmente los que tambien me han ayudado a la hora de escribir, permitiendome que compartiera sus ideas; por ello, menciono en detalle las fuentes en los apartados correspondientes, mas como muestra de agradecimiento que no para que el lector lo tenga que consultar (el lector habra visto que hay mas de un centenar de notas de pie de pagina). 
-Pero de todos los expertos en que me he inspirado, debo hacer una especial mencion a Fran‡ois Chollet, investigador de Google y creador de Keras, a quien tengo la suerte de conocer personalmente. Este libro esta escrito despues que Fran‡ois publicara su libro Deep Learning with Python, el cual me ha sido de gran ayuda e inspiracion y del que he considerado usar algunos de sus ejemplos de codigo compartido en su GitHub.
-Mi mas sincero agradecimiento a todos aquellos que han leido parcial o totalmente esta obra antes de ver la luz como Bernat Torres (SOMmobilitat), Fernando Garcia Sedano (Grupsa), Jordi Morera (UPCnet), Guifre Ballester (UPCnet), Sergi Sales (UPCnet)  quienes me han reportado interesantes comentarios para incluir en la version que tienen en sus manos. 
-Mi mayor agradecimiento a mi universidad, la Universitat PolitŠcnica de Catalunya - UPC Barcelona Tech, y en especial a Agustin Fernandez Jimenez, vicerrector de Transformacion Digital de la UPC por haber escrito el prologo de esta obra y haber hecho una lectura detallada del borrador final. La UPC ha sido el entorno de trabajo que me ha permitido realizar mi investigacion sobre estos temas y acumular los conocimientos que aqui quiero compartir. Universidad que ademas me ofrece dar clases en la Facultat d?Inform…tica de Barcelona a unos alumnos brillantes, quienes me animan a escribir obras como esta.
-Como mencionaba al principio del libro, a investigadores como Ricard Gavald… o Jordi Nin les debo que despertaran en mi el interes por estos temas anos atras. Otros, como RubŠn Tous o Joan Capdevila que me acompanaran en los primeros pasos. 
-En la misma linea, quiero agradecer al centro de investigacion Barcelona Supercomputing Center - Centro Nacional de Computacion (BSC) y en especial a sus directores Mateo Valero y Josep M. Martorell, y los directores del departamento de Computer Science Jesus Labarta y Eduard Ayguade, quienes me han permitido y apoyado siempre esta dŠria que tengo de tener que estar parant l?orella a les tecnologias que vendran. 
-Gracias tambien a Laura Juan por su exquisita revision del texto antes de que este viera la luz; sin su ayuda esta obra no tendria la calidad que tiene. 
-Tambien a Katy Wallace, por poner nombre a esta coleccion en la que se edita esta obra y a Enric Aromi por responder rapido a una dudas de wordpress en pasar este libro a formato HTML. 
-En la promocion de este libro agradezco el apoyo de FIB Alumni, Colúlegi Oficial d'Enginyeria en Inform…tica de Catalunya y el portal de informacion tecnologico TECNONEWS.
-Finalmente, mi agradecimiento a mis alumnos y alumnas que han compartido conmigo la primera edicion de este libro, los ?cap problema?: Martin Acosta, Alessio Addimando, John Jairo Ballestas, Andres Bermudez, Gabriel Cantos, Robert Carausu, Victor Chamizo, Juan de los Reyes, Francesc, de Puig, Pau Figueras, Rafa Genes,  Benat Jimenez, Miquel Lara, Gil Laroussi, Tito Leiva, Irene Lopez, Eduardo Rodriguez, Isabel Samaniego, Marc Tula, Javier Vasquez, Marc Vila y  Jonathan Zarama. ­Gracias a todos y a todas!
-
-
-
-
-
-
-Acerca del autor
-
-Catedratico en la Universitat PolitŠcnica de Catalunya132 con 30 anos de experiencia en docencia133 e investigacion134 en computacion de altas prestaciones, con importantes publicaciones cientificas135 y proyectos de I+D136 en empresas e instituciones. Su espiritu emprendedor le ha llevado a aplicar estos sistemas en la analitica avanzada sobre el Big Data, y en estos momentos su investigacion se centra en la supercomputacion aplicada a la Inteligencia Artificial en general y al Deep Learning en particular, area en la que codirigiendo tres tesis doctorales. Sus investigaciones se han publicado en los principales foros de este campo, incluyendo el congreso International Conference on Learning Representation (ICLR 2018) y workshops de los congresos Computer Vision and Pattern Recognition (CVPR 2017) y Neural Information Processing Systems (NIPS 2016, 2017). En estas publicaciones se ha colaborado con investigadores de la UPC, Columbia University, Google y Facebook.
-Desde sus inicios lidera un grupo de investigacion137 en el Barcelona Supercomputer Center138. Con su talante visionario y dinamizador de las nuevas tecnologias, durante estos ultimos anos ha realizado diferentes actividades para contribuir a la definicion de que estrategia seguir a nivel tecnologico ante los nuevos retos que estas tecnologias representan. Actualmente es consejero delegado del rector de la UPC en el consejo de administracion de la empresa iThinkUPC139, y actua como formador y experto140 para diversas organizaciones y empresas; a su vez, tambien ha escrito varios libros tecnicos141, imparte conferencias142 y colabora con diferentes medios de comunicacion143, radio y television144. Mantiene su blog145 desde el 2006 y recientemente ha creado una seccion en castellano para hablar de inteligencia artificial y tecnologias relacionadas en www.InteligenciaArtificial.Barcelona146. Puede encontrar mas informacion en www.JordiTorres.Barcelona.
-
-
