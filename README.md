@@ -14,5 +14,5 @@ Este repositorio contiene los notebooks de Jupyter que implementan los ejemplos 
 * Capítulo 6: [*Data Augmentation* y *Transfer Learning*](https://github.com/jorditorresBCN/Deep-Learning-Introduccion-practica-con-Keras/blob/master/6.DataAugmentation-TransferLearning.ipynb)
 * Capítulo 7: (pendiente)
 * Capítulo 8: API funcional de Keras y GANs con TensorFlow 2.0
-              8.1 API funcional de Keras
-              8.3 Programando una GAN
+    * 8.1 API funcional de Keras
+    * 8.3 Programando una GAN
