@@ -20,4 +20,5 @@ Este repositorio contiene los notebooks de Jupyter que implementan los ejemplos 
 * Capítulo 7: [Redes neuronales recurrentes](https://github.com/jorditorresBCN/Deep-Learning-Introduccion-practica-con-Keras/blob/master/7.RedesNeuronalesRecurrentes.ipynb)
 * Capítulo 8: API funcional de Keras y GANs con TensorFlow 2.0
     * 8.1 [API funcional de Keras](https://github.com/jorditorresBCN/Deep-Learning-Introduccion-practica-con-Keras/blob/master/8.1.API-funcional-de-Keras.ipynb)
-    * 8.3 Programando una GAN
+    * 8.3 [Programando una GAN](
+https://github.com/jorditorresBCN/Deep-Learning-Introduccion-practica-con-Keras/blob/master/8.3.programando-una-GAN.ipynb)
