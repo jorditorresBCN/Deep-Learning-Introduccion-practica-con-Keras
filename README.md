@@ -13,7 +13,7 @@ Este repositorio contiene los notebooks de Jupyter que implementan los ejemplos 
 * Capítulo 4: [Redes neuronales convolucionales](https://github.com/jorditorresBCN/Deep-Learning-Introduccion-practica-con-Keras/blob/master/4.RedesNeuronalesConvolucionales.ipynb)
 
 
-### Código de la segunda parte del libro (pendiente de publicación esta 2a parte del libro)
+### Código de la segunda parte del libro
 
 * Capítulo 5: [Datos y *Overfitting*](https://github.com/jorditorresBCN/Deep-Learning-Introduccion-practica-con-Keras)
 * Capítulo 6: [*Data Augmentation* y *Transfer Learning*](https://github.com/jorditorresBCN/Deep-Learning-Introduccion-practica-con-Keras/blob/master/6.DataAugmentation-TransferLearning.ipynb)
