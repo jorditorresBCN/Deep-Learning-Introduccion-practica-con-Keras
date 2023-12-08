@@ -1,5 +1,6 @@
-# DeepLearning - Introduccion práctica con Keras
-Este repositorio contiene los notebooks de Jupyter que implementan los ejemplos de código que se pueden encontrar en el libro  **[Deep Learning - Introducción práctica con Keras](https://torres.ai/deeplearning/)** que se ha editado en dos partes (**Mayo 2018** y **Octubre 2019**). Versión revisada en el libro  **[Python Deep Learning](https://github.com/jorditorresBCN/python-deep-learning)**
+# El contenido de este repositorio contiene código que ya muestra síntomas de antiguedad. Siento como autor no poder actualizarlo pero después de 5 años ya ha llegado el momento de descatalogar el contenido de los dos libros.  corresponde a dos libros que han sido ya descata
+## DeepLearning - Introduccion práctica con Keras
+Este repositorio contiene los notebooks de Jupyter que implementan los ejemplos de código que se pueden encontrar en el libro  **[Deep Learning - Introducción práctica con Keras]([https://torres.ai/deeplearning/](https://www.amazon.es/stores/Jordi-Torres/author/B0089PKU76))** que se ha editado en dos partes (en 2018 y 2019). Versión revisada en el libro  **[Python Deep Learning]([https://github.com/jorditorresBCN/python-deep-learning](https://www.amazon.es/stores/Jordi-Torres/author/B0089PKU76))**
 
 
 
